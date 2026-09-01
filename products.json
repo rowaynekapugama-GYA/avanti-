@@ -25,55 +25,64 @@
    "s": "a-frames",
    "n": "A-Frames",
    "g": "Signage",
-   "blurb": "Street-ready footpath signs, two styles, two sizes."
+   "blurb": "Street-ready footpath signs, two styles, two sizes.",
+   "img": "https://avantiprint.com.au/wp-content/uploads/2025/10/A-frame-fetured-img.jpg"
   },
   {
    "s": "corflute",
    "n": "Corflute",
    "g": "Signage",
-   "blurb": "Lightweight, weather-resistant signs for sites and events."
+   "blurb": "Lightweight, weather-resistant signs for sites and events.",
+   "img": "https://avantiprint.com.au/wp-content/uploads/2025/10/corflute-1.jpg"
   },
   {
    "s": "acm-panels",
    "n": "ACM Panels",
    "g": "Signage",
-   "blurb": "Rigid aluminium composite for shopfronts and long-term outdoor use."
+   "blurb": "Rigid aluminium composite for shopfronts and long-term outdoor use.",
+   "img": "https://avantiprint.com.au/wp-content/uploads/2025/10/Acm-02.jpg"
   },
   {
    "s": "foam-pvc",
    "n": "Foam PVC",
    "g": "Signage",
-   "blurb": "Smooth, durable substrate for indoor and outdoor signage."
+   "blurb": "Smooth, durable substrate for indoor and outdoor signage.",
+   "img": "https://avantiprint.com.au/wp-content/uploads/2025/10/pvc3.jpg"
   },
   {
    "s": "foamboard",
    "n": "Foamboard",
    "g": "Signage",
-   "blurb": "Cost-effective indoor displays and point-of-sale."
+   "blurb": "Cost-effective indoor displays and point-of-sale.",
+   "img": "https://avantiprint.com.au/wp-content/uploads/2025/10/foam-board-1.jpg"
   },
   {
    "s": "enviroboard",
    "n": "EnviroBoard",
    "g": "Signage",
-   "blurb": "Fully recyclable alternative to foamboard and PVC."
+   "blurb": "Fully recyclable alternative to foamboard and PVC.",
+   "img": "https://avantiprint.com.au/wp-content/uploads/2025/10/enviro-board-1.jpg"
   },
   {
    "s": "posters",
    "n": "Posters",
    "g": "Signage",
-   "blurb": "Vibrant full-colour prints on professional stocks."
+   "blurb": "Vibrant full-colour prints on professional stocks.",
+   "img": "assets/products/posters-1-480x600.jpg"
   },
   {
    "s": "window-graphics",
    "n": "Window Graphics",
    "g": "Signage",
-   "blurb": "Decals for glass — short-term promos or long-term branding."
+   "blurb": "Decals for glass — short-term promos or long-term branding.",
+   "img": "assets/products/window-graphics-2-480x600.jpg"
   },
   {
    "s": "floor-decals",
    "n": "Floor Decals",
    "g": "Signage",
-   "blurb": "Anti-slip graphics for wayfinding, promos and safety."
+   "blurb": "Anti-slip graphics for wayfinding, promos and safety.",
+   "img": "https://avantiprint.com.au/wp-content/uploads/2025/10/floor-decols2.jpg"
   },
   {
    "s": "wallpaper",
@@ -399,6 +408,14 @@
    "c": "a-frames",
    "p": 160,
    "pmax": 400,
+   "img": [
+    "https://avantiprint.com.au/wp-content/uploads/2025/10/A-frame-fetured-img.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/10/A-frame-03.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/10/A-frame-02.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/10/A-frame-6.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/10/A-frame-5.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/10/A-frame4.jpg"
+   ],
    "opts": {
     "Style": [
      "Standard",
@@ -417,6 +434,15 @@
    "c": "acm-panels",
    "p": 25.2,
    "pmax": 453.6,
+   "img": [
+    "https://avantiprint.com.au/wp-content/uploads/2025/10/Acm-02.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/10/Acm-03.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/10/Acm-1.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/10/Acm-7.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/10/Acm-6.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/10/Acm-5.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/10/Acm-4.jpg"
+   ],
    "opts": {
     "Size": [
      "A4",
@@ -434,6 +460,10 @@
    "n": "ACM Panels – Custom Dimensions",
    "c": "acm-panels",
    "p": 160,
+   "img": [
+    "https://avantiprint.com.au/wp-content/uploads/2025/10/Acm-03.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/10/Acm-7.jpg"
+   ],
    "d": "Strong, weatherproof, long-lasting signage — Need a size that isn't standard? Order ACM at your own dimensions. Enter your width and height and we'll cut to size.",
    "tags": [
     "custom"
@@ -445,6 +475,14 @@
    "c": "corflute",
    "p": 7.68,
    "pmax": 155.52,
+   "img": [
+    "https://avantiprint.com.au/wp-content/uploads/2025/10/corflute-1.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/10/corflute-3.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/10/corflute-2.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/10/corflute-6.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/10/corflute-5.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/10/corflute-4.jpg"
+   ],
    "opts": {
     "Size": [
      "A4",
@@ -465,6 +503,10 @@
    "n": "Corflute Signs – Custom Dimensions",
    "c": "corflute",
    "p": 32,
+   "img": [
+    "https://avantiprint.com.au/wp-content/uploads/2025/10/corflute-3.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/10/corflute-6.jpg"
+   ],
    "d": "Lightweight, affordable, weather-resistant — Corflute cut to your exact dimensions for site hoardings, event signage and anything non-standard.",
    "tags": [
     "custom"
@@ -476,6 +518,14 @@
    "c": "enviroboard",
    "p": 12,
    "pmax": 233.28,
+   "img": [
+    "https://avantiprint.com.au/wp-content/uploads/2025/10/enviro-board-1.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/10/enviroboard-3.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/10/enviro-board2.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/10/enviroboard-6.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/10/enviroboard-5.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/10/enviroboard-4.jpg"
+   ],
    "opts": {
     "Size": [
      "A4",
@@ -493,6 +543,14 @@
    "c": "floor-decals",
    "p": 3.6,
    "pmax": 40,
+   "img": [
+    "https://avantiprint.com.au/wp-content/uploads/2025/10/floor-decols2.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/10/floor-decals-3.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/10/floor-decols.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/10/floor-decols6.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/10/floor-decols5.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/10/floor-decols-4.jpg"
+   ],
    "opts": {
     "Size": [
      "A5",
@@ -513,6 +571,10 @@
    "n": "Floor Decals – Custom Dimensions",
    "c": "floor-decals",
    "p": 160,
+   "img": [
+    "https://avantiprint.com.au/wp-content/uploads/2025/10/floor-decals-3.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/10/floor-decols6.jpg"
+   ],
    "d": "Durable anti-slip graphics for indoor and outdoor floors — Custom-sized floor graphics for wayfinding, promotions and safety zones.",
    "tags": [
     "custom"
@@ -524,6 +586,14 @@
    "c": "foam-pvc",
    "p": 9.6,
    "pmax": 248.83,
+   "img": [
+    "https://avantiprint.com.au/wp-content/uploads/2025/10/pvc3.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/10/pvc-2.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/10/pvc-foam-1.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/10/pvc6.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/10/pvc5.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/10/pvc4.jpg"
+   ],
    "opts": {
     "Size": [
      "A4",
@@ -545,6 +615,14 @@
    "c": "foamboard",
    "p": 8.4,
    "pmax": 171.07,
+   "img": [
+    "https://avantiprint.com.au/wp-content/uploads/2025/10/foam-board-1.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/10/foam-board-3.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/10/foam-board-2.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/10/foam-board-6.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/10/foam-board-5.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/10/foam-board-4.jpg"
+   ],
    "opts": {
     "Size": [
      "A4",
@@ -561,6 +639,10 @@
    "n": "Foamboard – Custom Dimension",
    "c": "foamboard",
    "p": 35,
+   "img": [
+    "https://avantiprint.com.au/wp-content/uploads/2025/10/foam-board-3.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/10/foam-board-6.jpg"
+   ],
    "d": "Lightweight, smooth, ideal for indoor signage — Foamboard cut to your dimensions for displays, presentations and point-of-sale.",
    "tags": [
     "custom"
@@ -572,6 +654,10 @@
    "c": "posters",
    "p": 2.5,
    "pmax": 40,
+   "img": [
+    "assets/products/posters-1-480x600.jpg",
+    "assets/products/posters-4.jpg"
+   ],
    "opts": {
     "Size": [
      "A4",
@@ -593,6 +679,10 @@
    "n": "Posters – Custom Dimensions",
    "c": "posters",
    "p": 40,
+   "img": [
+    "assets/products/posters-1-480x600.jpg",
+    "assets/products/posters-4.jpg"
+   ],
    "d": "Vibrant, high-impact prints — Posters printed at any custom dimension on your choice of stock.",
    "tags": [
     "custom"
@@ -604,6 +694,10 @@
    "c": "window-graphics",
    "p": 4.8,
    "pmax": 72,
+   "img": [
+    "assets/products/window-graphics-2-480x600.jpg",
+    "assets/products/window-graphics-3.jpg"
+   ],
    "opts": {
     "Type": [
      "Removable (short-term promotions)",
@@ -623,6 +717,10 @@
    "n": "Window Graphics – Custom Dimensions",
    "c": "window-graphics",
    "p": 40,
+   "img": [
+    "assets/products/window-graphics-2-480x600.jpg",
+    "assets/products/window-graphics-3.jpg"
+   ],
    "d": "Custom branding for glass surfaces — Window decals cut to your exact measurements for full shopfront coverage.",
    "tags": [
     "custom"
@@ -639,6 +737,11 @@
    ],
    "sold": false,
    "d": "A classic floral with an antique touch — refined, vintage charm for living rooms, bedrooms or dining areas.",
+   "img": [
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Complete-Wall-Design-15-2.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Close-Up-Design-15-2.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Original-Artboard-Design-15-2.jpg"
+   ],
    "long": "<p>Enter your wall dimensions and select your finish. Minimum order 0.5 m² (707mm × 707mm). Peel & stick, easy to apply, durable and removable.</p><h4>Finish options</h4><ul><li>Matte peel &amp; stick (standard)</li><li>Textured canvas peel &amp; stick</li></ul><p>Made from high-quality materials, easy to apply and durable. Supplied in panels sized to your wall.</p>",
    "opts": {
     "Finish": [
@@ -659,6 +762,11 @@
    ],
    "sold": false,
    "d": "A subtle textured white finish with an antique-inspired pattern; timeless, neutral and full of depth.",
+   "img": [
+    "assets/products/Complete-Wall-Design-12-2.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Close-Up-Design-12-2.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Original-Artboard-Design-12-2.jpg"
+   ],
    "long": "<p>Enter your wall dimensions and select your finish. Minimum order 0.5 m² (707mm × 707mm). Peel & stick, easy to apply, durable and removable.</p><h4>Finish options</h4><ul><li>Matte peel &amp; stick (standard)</li><li>Textured canvas peel &amp; stick</li></ul><p>Made from high-quality materials, easy to apply and durable. Supplied in panels sized to your wall.</p>",
    "opts": {
     "Finish": [
@@ -679,6 +787,11 @@
    ],
    "sold": false,
    "d": "A soothing aqua background with an artistic old-stain effect — modern meets retro.",
+   "img": [
+    "assets/products/Original-Artboard-Design-7-2.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Complete-Wall-Design-7-2.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Close-Up-Design-7-2.jpg"
+   ],
    "long": "<p>Enter your wall dimensions and select your finish. Minimum order 0.5 m² (707mm × 707mm). Peel & stick, easy to apply, durable and removable.</p><h4>Finish options</h4><ul><li>Matte peel &amp; stick (standard)</li><li>Textured canvas peel &amp; stick</li></ul><p>Made from high-quality materials, easy to apply and durable. Supplied in panels sized to your wall.</p>",
    "opts": {
     "Finish": [
@@ -699,6 +812,12 @@
    ],
    "sold": false,
    "d": "A dynamic, visually engaging pattern that brings creative expression to offices and galleries.",
+   "img": [
+    "assets/products/Complete-Wall-Design-6-1-480x600.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Complete-Wall-Design-6-1.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Close-Up-Design-6-1.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Original-Artboard-Design-6-1.jpg"
+   ],
    "long": "<p>Enter your wall dimensions and select your finish. Minimum order 0.5 m² (707mm × 707mm). Peel & stick, easy to apply, durable and removable.</p><h4>Finish options</h4><ul><li>Matte peel &amp; stick (standard)</li><li>Textured canvas peel &amp; stick</li></ul><p>Made from high-quality materials, easy to apply and durable. Supplied in panels sized to your wall.</p>",
    "opts": {
     "Finish": [
@@ -719,6 +838,9 @@
    ],
    "sold": false,
    "d": "Trees bathed in the golden glow of twilight — rich, warm colours for a cosy, inviting room.",
+   "img": [
+    "assets/products/autumn-twilight-wall.jpg"
+   ],
    "long": "<p>Enter your wall dimensions and select your finish. Minimum order 0.5 m² (707mm × 707mm). Peel & stick, easy to apply, durable and removable.</p><h4>Finish options</h4><ul><li>Matte peel &amp; stick (standard)</li><li>Textured canvas peel &amp; stick</li></ul><p>Made from high-quality materials, easy to apply and durable. Supplied in panels sized to your wall.</p>",
    "opts": {
     "Finish": [
@@ -739,6 +861,11 @@
    ],
    "sold": false,
    "d": "Adorable animals floating in colourful hot air balloons on a pastel blue sky. Dreamy for nurseries.",
+   "img": [
+    "assets/products/Complete-Wall-Design-22.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Close-Up-Design-22.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Original-Artboard-Design-22.jpg"
+   ],
    "long": "<p>Enter your wall dimensions and select your finish. Minimum order 0.5 m² (707mm × 707mm). Peel & stick, easy to apply, durable and removable.</p><h4>Finish options</h4><ul><li>Matte peel &amp; stick (standard)</li><li>Textured canvas peel &amp; stick</li></ul><p>Made from high-quality materials, easy to apply and durable. Supplied in panels sized to your wall.</p>",
    "opts": {
     "Finish": [
@@ -759,6 +886,12 @@
    ],
    "sold": false,
    "d": "Sleek black hexagons fused with rustic wood textures — geometric precision with natural warmth.",
+   "img": [
+    "assets/products/Complete-Wall-Design-18-1-480x600.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Complete-Wall-Design-18-1.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Close-Up-Design-18-1.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Original-Artboard-Design-18-1.jpg"
+   ],
    "long": "<p>Enter your wall dimensions and select your finish. Minimum order 0.5 m² (707mm × 707mm). Peel & stick, easy to apply, durable and removable.</p><h4>Finish options</h4><ul><li>Matte peel &amp; stick (standard)</li><li>Textured canvas peel &amp; stick</li></ul><p>Made from high-quality materials, easy to apply and durable. Supplied in panels sized to your wall.</p>",
    "opts": {
     "Finish": [
@@ -779,6 +912,11 @@
    ],
    "sold": false,
    "d": "A striking black wood effect for dramatic, contemporary spaces.",
+   "img": [
+    "assets/products/Complete-Wall-Design-17-1.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Close-Up-Design-17-1.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Original-Artboard-Design-17-1.jpg"
+   ],
    "long": "<p>Enter your wall dimensions and select your finish. Minimum order 0.5 m² (707mm × 707mm). Peel & stick, easy to apply, durable and removable.</p><h4>Finish options</h4><ul><li>Matte peel &amp; stick (standard)</li><li>Textured canvas peel &amp; stick</li></ul><p>Made from high-quality materials, easy to apply and durable. Supplied in panels sized to your wall.</p>",
    "opts": {
     "Finish": [
@@ -799,6 +937,12 @@
    ],
    "sold": false,
    "d": "A soft, blurred impression of a clean modern office — a sophisticated backdrop that never distracts.",
+   "img": [
+    "assets/products/Complete-Wall-Design-20-1-480x600.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Complete-Wall-Design-20-1.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Close-Up-Design-20-1.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Original-Artboard-Design-20-1.jpg"
+   ],
    "long": "<p>Enter your wall dimensions and select your finish. Minimum order 0.5 m² (707mm × 707mm). Peel & stick, easy to apply, durable and removable.</p><h4>Finish options</h4><ul><li>Matte peel &amp; stick (standard)</li><li>Textured canvas peel &amp; stick</li></ul><p>Made from high-quality materials, easy to apply and durable. Supplied in panels sized to your wall.</p>",
    "opts": {
     "Finish": [
@@ -819,6 +963,12 @@
    ],
    "sold": false,
    "d": "Iconic patterns and colours inspired by the 1960s for a nostalgic, stylish room.",
+   "img": [
+    "assets/products/Complete-Wall-Design-4-2-480x600.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Complete-Wall-Design-4-2.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Close-Up-Design-4-2.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Original-Artboard-Design-4-2.jpg"
+   ],
    "long": "<p>Enter your wall dimensions and select your finish. Minimum order 0.5 m² (707mm × 707mm). Peel & stick, easy to apply, durable and removable.</p><h4>Finish options</h4><ul><li>Matte peel &amp; stick (standard)</li><li>Textured canvas peel &amp; stick</li></ul><p>Made from high-quality materials, easy to apply and durable. Supplied in panels sized to your wall.</p>",
    "opts": {
     "Finish": [
@@ -839,6 +989,12 @@
    ],
    "sold": false,
    "d": "A sophisticated arrangement of classic lines — clean, structured and refined.",
+   "img": [
+    "assets/products/Complete-Wall-Design-1-1-480x600.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Complete-Wall-Design-1-1.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Close-Up-Design-1-1.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Original-Artboard-Design-1-1.jpg"
+   ],
    "long": "<p>Enter your wall dimensions and select your finish. Minimum order 0.5 m² (707mm × 707mm). Peel & stick, easy to apply, durable and removable.</p><h4>Finish options</h4><ul><li>Matte peel &amp; stick (standard)</li><li>Textured canvas peel &amp; stick</li></ul><p>Made from high-quality materials, easy to apply and durable. Supplied in panels sized to your wall.</p>",
    "opts": {
     "Finish": [
@@ -859,6 +1015,11 @@
    ],
    "sold": false,
    "d": "An enduring pattern that complements a wide range of décor styles.",
+   "img": [
+    "assets/products/Complete-Wall-Design-4-1.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Close-Up-Design-4-1.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Original-Artboard-Design-4-1.jpg"
+   ],
    "long": "<p>Enter your wall dimensions and select your finish. Minimum order 0.5 m² (707mm × 707mm). Peel & stick, easy to apply, durable and removable.</p><h4>Finish options</h4><ul><li>Matte peel &amp; stick (standard)</li><li>Textured canvas peel &amp; stick</li></ul><p>Made from high-quality materials, easy to apply and durable. Supplied in panels sized to your wall.</p>",
    "opts": {
     "Finish": [
@@ -879,6 +1040,11 @@
    ],
    "sold": false,
    "d": "Subtle texture on crisp white — clean, modern and professional for offices and meeting rooms.",
+   "img": [
+    "assets/products/Complete-Wall-Design-19.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Close-Up-Design-19.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Original-Artboard-Design-19.jpg"
+   ],
    "long": "<p>Enter your wall dimensions and select your finish. Minimum order 0.5 m² (707mm × 707mm). Peel & stick, easy to apply, durable and removable.</p><h4>Finish options</h4><ul><li>Matte peel &amp; stick (standard)</li><li>Textured canvas peel &amp; stick</li></ul><p>Made from high-quality materials, easy to apply and durable. Supplied in panels sized to your wall.</p>",
    "opts": {
     "Finish": [
@@ -899,6 +1065,12 @@
    ],
    "sold": false,
    "d": "A playful scatter of coloured confetti for a festive, cheerful atmosphere.",
+   "img": [
+    "assets/products/Complete-Wall-Design-5-480x600.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Complete-Wall-Design-5.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Close-Up-Design-5.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Original-Artboard-Design-5.jpg"
+   ],
    "long": "<p>Enter your wall dimensions and select your finish. Minimum order 0.5 m² (707mm × 707mm). Peel & stick, easy to apply, durable and removable.</p><h4>Finish options</h4><ul><li>Matte peel &amp; stick (standard)</li><li>Textured canvas peel &amp; stick</li></ul><p>Made from high-quality materials, easy to apply and durable. Supplied in panels sized to your wall.</p>",
    "opts": {
     "Finish": [
@@ -919,6 +1091,12 @@
    ],
    "sold": false,
    "d": "Little bears sleeping on fluffy clouds under a crescent moon — sweet and calming for nurseries.",
+   "img": [
+    "assets/products/Complete-Wall-Design-11-480x600.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Complete-Wall-Design-11.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Close-Up-Design-11.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Original-Artboard-Design-11.jpg"
+   ],
    "long": "<p>Enter your wall dimensions and select your finish. Minimum order 0.5 m² (707mm × 707mm). Peel & stick, easy to apply, durable and removable.</p><h4>Finish options</h4><ul><li>Matte peel &amp; stick (standard)</li><li>Textured canvas peel &amp; stick</li></ul><p>Made from high-quality materials, easy to apply and durable. Supplied in panels sized to your wall.</p>",
    "opts": {
     "Finish": [
@@ -939,6 +1117,12 @@
    ],
    "sold": false,
    "d": "Majestic elephants and trees in a repeating pattern — playful yet sophisticated.",
+   "img": [
+    "assets/products/Complete-Wall-Design-3-480x600.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Complete-Wall-Design-3.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Close-Up-Design-3.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Original-Artboard-Design-3.jpg"
+   ],
    "long": "<p>Enter your wall dimensions and select your finish. Minimum order 0.5 m² (707mm × 707mm). Peel & stick, easy to apply, durable and removable.</p><h4>Finish options</h4><ul><li>Matte peel &amp; stick (standard)</li><li>Textured canvas peel &amp; stick</li></ul><p>Made from high-quality materials, easy to apply and durable. Supplied in panels sized to your wall.</p>",
    "opts": {
     "Finish": [
@@ -959,6 +1143,11 @@
    ],
    "sold": false,
    "d": "Bears, deer and foxes frolicking in a lush woodland scene full of adventure.",
+   "img": [
+    "assets/products/Original-Artboard-Design-13-480x600.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Complete-Wall-Design-13.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Close-Up-Design-13.jpg"
+   ],
    "long": "<p>Enter your wall dimensions and select your finish. Minimum order 0.5 m² (707mm × 707mm). Peel & stick, easy to apply, durable and removable.</p><h4>Finish options</h4><ul><li>Matte peel &amp; stick (standard)</li><li>Textured canvas peel &amp; stick</li></ul><p>Made from high-quality materials, easy to apply and durable. Supplied in panels sized to your wall.</p>",
    "opts": {
     "Finish": [
@@ -979,6 +1168,11 @@
    ],
    "sold": false,
    "d": "Storybook animals exploring an open forest with a charming tree-house door.",
+   "img": [
+    "assets/products/Original-Artboard-Design-14-480x600.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Complete-Wall-Design-14.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Close-Up-Design-14.jpg"
+   ],
    "long": "<p>Enter your wall dimensions and select your finish. Minimum order 0.5 m² (707mm × 707mm). Peel & stick, easy to apply, durable and removable.</p><h4>Finish options</h4><ul><li>Matte peel &amp; stick (standard)</li><li>Textured canvas peel &amp; stick</li></ul><p>Made from high-quality materials, easy to apply and durable. Supplied in panels sized to your wall.</p>",
    "opts": {
     "Finish": [
@@ -999,6 +1193,12 @@
    ],
    "sold": false,
    "d": "A lush forest brimming with graceful deer — tranquil and enchanting.",
+   "img": [
+    "assets/products/Complete-Wall-Design-16-480x600.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Complete-Wall-Design-16.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Close-Up-Design-16.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Original-Artboard-Design-16.jpg"
+   ],
    "long": "<p>Enter your wall dimensions and select your finish. Minimum order 0.5 m² (707mm × 707mm). Peel & stick, easy to apply, durable and removable.</p><h4>Finish options</h4><ul><li>Matte peel &amp; stick (standard)</li><li>Textured canvas peel &amp; stick</li></ul><p>Made from high-quality materials, easy to apply and durable. Supplied in panels sized to your wall.</p>",
    "opts": {
     "Finish": [
@@ -1019,6 +1219,12 @@
    ],
    "sold": false,
    "d": "Lush, vibrant garden foliage for a lively, rejuvenating room.",
+   "img": [
+    "assets/products/Complete-Wall-Design-11-2-480x600.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Complete-Wall-Design-11-2.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Close-Up-Design-11-2.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Original-Artboard-Design-11-2.jpg"
+   ],
    "long": "<p>Enter your wall dimensions and select your finish. Minimum order 0.5 m² (707mm × 707mm). Peel & stick, easy to apply, durable and removable.</p><h4>Finish options</h4><ul><li>Matte peel &amp; stick (standard)</li><li>Textured canvas peel &amp; stick</li></ul><p>Made from high-quality materials, easy to apply and durable. Supplied in panels sized to your wall.</p>",
    "opts": {
     "Finish": [
@@ -1039,6 +1245,12 @@
    ],
    "sold": false,
    "d": "A stunning gold foil effect — luxury and glamour for living and dining spaces.",
+   "img": [
+    "assets/products/Complete-Wall-Design-6-2-480x600.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Complete-Wall-Design-6-2.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Close-Up-Design-6-2.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Original-Artboard-Design-6-2.jpg"
+   ],
    "long": "<p>Enter your wall dimensions and select your finish. Minimum order 0.5 m² (707mm × 707mm). Peel & stick, easy to apply, durable and removable.</p><h4>Finish options</h4><ul><li>Matte peel &amp; stick (standard)</li><li>Textured canvas peel &amp; stick</li></ul><p>Made from high-quality materials, easy to apply and durable. Supplied in panels sized to your wall.</p>",
    "opts": {
     "Finish": [
@@ -1059,6 +1271,12 @@
    ],
    "sold": true,
    "d": "Elegant gold lines on a textured granite background — luxurious and contemporary.",
+   "img": [
+    "assets/products/Complete-Wall-Design-5-1-480x600.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Complete-Wall-Design-5-1.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Close-Up-Design-5-1.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Original-Artboard-Design-5-1.jpg"
+   ],
    "long": "<p>Enter your wall dimensions and select your finish. Minimum order 0.5 m² (707mm × 707mm). Peel & stick, easy to apply, durable and removable.</p><h4>Finish options</h4><ul><li>Matte peel &amp; stick (standard)</li><li>Textured canvas peel &amp; stick</li></ul><p>Made from high-quality materials, easy to apply and durable. Supplied in panels sized to your wall.</p>",
    "opts": {
     "Finish": [
@@ -1079,6 +1297,12 @@
    ],
    "sold": false,
    "d": "Dynamic grey strokes for a modern, expressive, abstract backdrop.",
+   "img": [
+    "assets/products/Complete-Wall-Design-8-2-480x600.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Complete-Wall-Design-8-2.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Close-Up-Design-8-2.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Original-Artboard-Design-8-2.jpg"
+   ],
    "long": "<p>Enter your wall dimensions and select your finish. Minimum order 0.5 m² (707mm × 707mm). Peel & stick, easy to apply, durable and removable.</p><h4>Finish options</h4><ul><li>Matte peel &amp; stick (standard)</li><li>Textured canvas peel &amp; stick</li></ul><p>Made from high-quality materials, easy to apply and durable. Supplied in panels sized to your wall.</p>",
    "opts": {
     "Finish": [
@@ -1099,6 +1323,12 @@
    ],
    "sold": false,
    "d": "Monkeys, elephants, giraffes and colourful birds in a lush green canopy.",
+   "img": [
+    "assets/products/Complete-Wall-Design-1-480x600.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Complete-Wall-Design-1.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Close-Up-Design-1.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Original-Artboard-Design-1.jpg"
+   ],
    "long": "<p>Enter your wall dimensions and select your finish. Minimum order 0.5 m² (707mm × 707mm). Peel & stick, easy to apply, durable and removable.</p><h4>Finish options</h4><ul><li>Matte peel &amp; stick (standard)</li><li>Textured canvas peel &amp; stick</li></ul><p>Made from high-quality materials, easy to apply and durable. Supplied in panels sized to your wall.</p>",
    "opts": {
     "Finish": [
@@ -1119,6 +1349,12 @@
    ],
    "sold": false,
    "d": "Giraffes, elephants, tigers and more on a vibrant jungle backdrop.",
+   "img": [
+    "assets/products/Complete-Wall-Design-2-480x600.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Complete-Wall-Design-2.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Close-Up-Design-2.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Original-Artboard-Design-2.jpg"
+   ],
    "long": "<p>Enter your wall dimensions and select your finish. Minimum order 0.5 m² (707mm × 707mm). Peel & stick, easy to apply, durable and removable.</p><h4>Finish options</h4><ul><li>Matte peel &amp; stick (standard)</li><li>Textured canvas peel &amp; stick</li></ul><p>Made from high-quality materials, easy to apply and durable. Supplied in panels sized to your wall.</p>",
    "opts": {
     "Finish": [
@@ -1139,6 +1375,12 @@
    ],
    "sold": false,
    "d": "A sleek, contemporary office scene with clean lines — inspiring and professional.",
+   "img": [
+    "assets/products/Complete-Wall-Design-21-1-480x600.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Complete-Wall-Design-21-1.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Close-Up-Design-21-1.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Original-Artboard-Design-21-1.jpg"
+   ],
    "long": "<p>Enter your wall dimensions and select your finish. Minimum order 0.5 m² (707mm × 707mm). Peel & stick, easy to apply, durable and removable.</p><h4>Finish options</h4><ul><li>Matte peel &amp; stick (standard)</li><li>Textured canvas peel &amp; stick</li></ul><p>Made from high-quality materials, easy to apply and durable. Supplied in panels sized to your wall.</p>",
    "opts": {
     "Finish": [
@@ -1159,6 +1401,12 @@
    ],
    "sold": false,
    "d": "A contemporary panel effect — structured, sophisticated, modern.",
+   "img": [
+    "assets/products/Complete-Wall-Design-7-1-480x600.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Complete-Wall-Design-7-1.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Close-Up-Design-7-1.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Original-Artboard-Design-7-1.jpg"
+   ],
    "long": "<p>Enter your wall dimensions and select your finish. Minimum order 0.5 m² (707mm × 707mm). Peel & stick, easy to apply, durable and removable.</p><h4>Finish options</h4><ul><li>Matte peel &amp; stick (standard)</li><li>Textured canvas peel &amp; stick</li></ul><p>Made from high-quality materials, easy to apply and durable. Supplied in panels sized to your wall.</p>",
    "opts": {
     "Finish": [
@@ -1179,6 +1427,12 @@
    ],
    "sold": false,
    "d": "Vibrant green trees with monkeys swinging from the branches on crisp white.",
+   "img": [
+    "assets/products/Complete-Wall-Design-4-480x600.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Complete-Wall-Design-4.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Close-Up-Design-4.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Original-Artboard-Design-4.jpg"
+   ],
    "long": "<p>Enter your wall dimensions and select your finish. Minimum order 0.5 m² (707mm × 707mm). Peel & stick, easy to apply, durable and removable.</p><h4>Finish options</h4><ul><li>Matte peel &amp; stick (standard)</li><li>Textured canvas peel &amp; stick</li></ul><p>Made from high-quality materials, easy to apply and durable. Supplied in panels sized to your wall.</p>",
    "opts": {
     "Finish": [
@@ -1199,6 +1453,12 @@
    ],
    "sold": false,
    "d": "The iconic New York skyline — urban sophistication and ambition for your workspace.",
+   "img": [
+    "assets/products/Complete-Wall-Design-22-1-480x600.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Complete-Wall-Design-22-1.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Close-Up-Design-22-1.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Original-Artboard-Design-22-1.jpg"
+   ],
    "long": "<p>Enter your wall dimensions and select your finish. Minimum order 0.5 m² (707mm × 707mm). Peel & stick, easy to apply, durable and removable.</p><h4>Finish options</h4><ul><li>Matte peel &amp; stick (standard)</li><li>Textured canvas peel &amp; stick</li></ul><p>Made from high-quality materials, easy to apply and durable. Supplied in panels sized to your wall.</p>",
    "opts": {
     "Finish": [
@@ -1219,6 +1479,12 @@
    ],
    "sold": false,
    "d": "A vibrant array of paint strokes for creative studios and bold offices.",
+   "img": [
+    "assets/products/Complete-Wall-Design-3-1-480x600.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Complete-Wall-Design-3-1.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Close-Up-Design-3-1.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Original-Artboard-Design-3-1.jpg"
+   ],
    "long": "<p>Enter your wall dimensions and select your finish. Minimum order 0.5 m² (707mm × 707mm). Peel & stick, easy to apply, durable and removable.</p><h4>Finish options</h4><ul><li>Matte peel &amp; stick (standard)</li><li>Textured canvas peel &amp; stick</li></ul><p>Made from high-quality materials, easy to apply and durable. Supplied in panels sized to your wall.</p>",
    "opts": {
     "Finish": [
@@ -1239,6 +1505,12 @@
    ],
    "sold": false,
    "d": "An elegant elephant on the streets of Paris — whimsy with sophistication.",
+   "img": [
+    "assets/products/Complete-Wall-Design-8-480x600.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Complete-Wall-Design-8.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Close-Up-Design-8.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Original-Artboard-Design-8.jpg"
+   ],
    "long": "<p>Enter your wall dimensions and select your finish. Minimum order 0.5 m² (707mm × 707mm). Peel & stick, easy to apply, durable and removable.</p><h4>Finish options</h4><ul><li>Matte peel &amp; stick (standard)</li><li>Textured canvas peel &amp; stick</li></ul><p>Made from high-quality materials, easy to apply and durable. Supplied in panels sized to your wall.</p>",
    "opts": {
     "Finish": [
@@ -1259,6 +1531,9 @@
    ],
    "sold": false,
    "d": "Cheerful balloons floating across a soft pastel sky — light and airy.",
+   "img": [
+    "assets/products/Complete-Wall-Design-5-480x600.png"
+   ],
    "long": "<p>Enter your wall dimensions and select your finish. Minimum order 0.5 m² (707mm × 707mm). Peel & stick, easy to apply, durable and removable.</p><h4>Finish options</h4><ul><li>Matte peel &amp; stick (standard)</li><li>Textured canvas peel &amp; stick</li></ul><p>Made from high-quality materials, easy to apply and durable. Supplied in panels sized to your wall.</p>",
    "opts": {
     "Finish": [
@@ -1279,6 +1554,12 @@
    ],
    "sold": false,
    "d": "A whimsical pastel forest with playful jungle animals on light pink.",
+   "img": [
+    "assets/products/Complete-Wall-Design-9-480x600.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Complete-Wall-Design-9.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Close-Up-Design-9.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Original-Artboard-Design-9.jpg"
+   ],
    "long": "<p>Enter your wall dimensions and select your finish. Minimum order 0.5 m² (707mm × 707mm). Peel & stick, easy to apply, durable and removable.</p><h4>Finish options</h4><ul><li>Matte peel &amp; stick (standard)</li><li>Textured canvas peel &amp; stick</li></ul><p>Made from high-quality materials, easy to apply and durable. Supplied in panels sized to your wall.</p>",
    "opts": {
     "Finish": [
@@ -1299,6 +1580,12 @@
    ],
    "sold": false,
    "d": "Delicate pastel leaves — soft, serene and natural.",
+   "img": [
+    "assets/products/Complete-Wall-Design-16-2-480x600.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Complete-Wall-Design-16-2.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Close-Up-Design-16-2.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Original-Artboard-Design-16-2.jpg"
+   ],
    "long": "<p>Enter your wall dimensions and select your finish. Minimum order 0.5 m² (707mm × 707mm). Peel & stick, easy to apply, durable and removable.</p><h4>Finish options</h4><ul><li>Matte peel &amp; stick (standard)</li><li>Textured canvas peel &amp; stick</li></ul><p>Made from high-quality materials, easy to apply and durable. Supplied in panels sized to your wall.</p>",
    "opts": {
     "Finish": [
@@ -1319,6 +1606,12 @@
    ],
    "sold": false,
    "d": "Cartoon animals on bicycles, planes and street scenes on soft blue.",
+   "img": [
+    "assets/products/Complete-Wall-Design-20-480x600.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Complete-Wall-Design-20.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Close-Up-Design-20.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Original-Artboard-Design-20.jpg"
+   ],
    "long": "<p>Enter your wall dimensions and select your finish. Minimum order 0.5 m² (707mm × 707mm). Peel & stick, easy to apply, durable and removable.</p><h4>Finish options</h4><ul><li>Matte peel &amp; stick (standard)</li><li>Textured canvas peel &amp; stick</li></ul><p>Made from high-quality materials, easy to apply and durable. Supplied in panels sized to your wall.</p>",
    "opts": {
     "Finish": [
@@ -1339,6 +1632,12 @@
    ],
    "sold": false,
    "d": "A unicorn prancing through fluffy clouds under a vibrant rainbow.",
+   "img": [
+    "assets/products/Complete-Wall-Design-12-480x600.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Complete-Wall-Design-12.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Close-Up-Design-12.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Original-Artboard-Design-12.jpg"
+   ],
    "long": "<p>Enter your wall dimensions and select your finish. Minimum order 0.5 m² (707mm × 707mm). Peel & stick, easy to apply, durable and removable.</p><h4>Finish options</h4><ul><li>Matte peel &amp; stick (standard)</li><li>Textured canvas peel &amp; stick</li></ul><p>Made from high-quality materials, easy to apply and durable. Supplied in panels sized to your wall.</p>",
    "opts": {
     "Finish": [
@@ -1359,6 +1658,12 @@
    ],
    "sold": false,
    "d": "Realistic cement for industrial-chic lofts, offices and creative spaces.",
+   "img": [
+    "assets/products/Complete-Wall-Design-14-1-480x600.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Complete-Wall-Design-14-1.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Close-Up-Design-14-1.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Original-Artboard-Design-14-1.jpg"
+   ],
    "long": "<p>Enter your wall dimensions and select your finish. Minimum order 0.5 m² (707mm × 707mm). Peel & stick, easy to apply, durable and removable.</p><h4>Finish options</h4><ul><li>Matte peel &amp; stick (standard)</li><li>Textured canvas peel &amp; stick</li></ul><p>Made from high-quality materials, easy to apply and durable. Supplied in panels sized to your wall.</p>",
    "opts": {
     "Finish": [
@@ -1379,6 +1684,12 @@
    ],
    "sold": false,
    "d": "A beautifully aged, weathered look full of classic character.",
+   "img": [
+    "assets/products/Complete-Wall-Design-2-1-480x600.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Complete-Wall-Design-2-1.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Close-Up-Design-2-1.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Original-Artboard-Design-2-1.jpg"
+   ],
    "long": "<p>Enter your wall dimensions and select your finish. Minimum order 0.5 m² (707mm × 707mm). Peel & stick, easy to apply, durable and removable.</p><h4>Finish options</h4><ul><li>Matte peel &amp; stick (standard)</li><li>Textured canvas peel &amp; stick</li></ul><p>Made from high-quality materials, easy to apply and durable. Supplied in panels sized to your wall.</p>",
    "opts": {
     "Finish": [
@@ -1399,6 +1710,12 @@
    ],
    "sold": false,
    "d": "Giraffes, elephants and tranquil trees with gentle birds — a serene safari.",
+   "img": [
+    "assets/products/Complete-Wall-Design-7-480x600.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Complete-Wall-Design-7.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Close-Up-Design-7.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Original-Artboard-Design-7.jpg"
+   ],
    "long": "<p>Enter your wall dimensions and select your finish. Minimum order 0.5 m² (707mm × 707mm). Peel & stick, easy to apply, durable and removable.</p><h4>Finish options</h4><ul><li>Matte peel &amp; stick (standard)</li><li>Textured canvas peel &amp; stick</li></ul><p>Made from high-quality materials, easy to apply and durable. Supplied in panels sized to your wall.</p>",
    "opts": {
     "Finish": [
@@ -1419,6 +1736,12 @@
    ],
    "sold": false,
    "d": "A penguin and giraffe in a hot air balloon, a fox on a balloon-lifted bicycle.",
+   "img": [
+    "assets/products/Complete-Wall-Design-6-480x600.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Complete-Wall-Design-6.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Close-Up-Design-6.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Original-Artboard-Design-6.jpg"
+   ],
    "long": "<p>Enter your wall dimensions and select your finish. Minimum order 0.5 m² (707mm × 707mm). Peel & stick, easy to apply, durable and removable.</p><h4>Finish options</h4><ul><li>Matte peel &amp; stick (standard)</li><li>Textured canvas peel &amp; stick</li></ul><p>Made from high-quality materials, easy to apply and durable. Supplied in panels sized to your wall.</p>",
    "opts": {
     "Finish": [
@@ -1439,6 +1762,12 @@
    ],
    "sold": false,
    "d": "Pink with colourful sprinkles — a burst of fun for play areas.",
+   "img": [
+    "assets/products/Complete-Wall-Design-13-1-480x600.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Complete-Wall-Design-13-1.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Close-Up-Design-13-1.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Original-Artboard-Design-13-1.jpg"
+   ],
    "long": "<p>Enter your wall dimensions and select your finish. Minimum order 0.5 m² (707mm × 707mm). Peel & stick, easy to apply, durable and removable.</p><h4>Finish options</h4><ul><li>Matte peel &amp; stick (standard)</li><li>Textured canvas peel &amp; stick</li></ul><p>Made from high-quality materials, easy to apply and durable. Supplied in panels sized to your wall.</p>",
    "opts": {
     "Finish": [
@@ -1459,6 +1788,12 @@
    ],
    "sold": false,
    "d": "Twinkling stars on a dreamy pink-and-blue gradient.",
+   "img": [
+    "assets/products/Complete-Wall-Design-18-480x600.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Complete-Wall-Design-18.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Close-Up-Design-18.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Original-Artboard-Design-18.jpg"
+   ],
    "long": "<p>Enter your wall dimensions and select your finish. Minimum order 0.5 m² (707mm × 707mm). Peel & stick, easy to apply, durable and removable.</p><h4>Finish options</h4><ul><li>Matte peel &amp; stick (standard)</li><li>Textured canvas peel &amp; stick</li></ul><p>Made from high-quality materials, easy to apply and durable. Supplied in panels sized to your wall.</p>",
    "opts": {
     "Finish": [
@@ -1479,6 +1814,12 @@
    ],
    "sold": false,
    "d": "Soft clouds in warm sunset hues as day turns to night.",
+   "img": [
+    "assets/products/Complete-Wall-Design-10-480x600.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Complete-Wall-Design-10.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Close-Up-Design-10.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Original-Artboard-Design-10.jpg"
+   ],
    "long": "<p>Enter your wall dimensions and select your finish. Minimum order 0.5 m² (707mm × 707mm). Peel & stick, easy to apply, durable and removable.</p><h4>Finish options</h4><ul><li>Matte peel &amp; stick (standard)</li><li>Textured canvas peel &amp; stick</li></ul><p>Made from high-quality materials, easy to apply and durable. Supplied in panels sized to your wall.</p>",
    "opts": {
     "Finish": [
@@ -1499,6 +1840,9 @@
    ],
    "sold": false,
    "d": "Sydney Harbour and the Opera House against the city skyline — local pride for offices and meeting rooms.",
+   "img": [
+    "assets/products/Original-Artboard-Design-8-1.jpg"
+   ],
    "long": "<p>Enter your wall dimensions and select your finish. Minimum order 0.5 m² (707mm × 707mm). Peel & stick, easy to apply, durable and removable.</p><h4>Finish options</h4><ul><li>Matte peel &amp; stick (standard)</li><li>Textured canvas peel &amp; stick</li></ul><p>Made from high-quality materials, easy to apply and durable. Supplied in panels sized to your wall.</p>",
    "opts": {
     "Finish": [
@@ -1519,6 +1863,12 @@
    ],
    "sold": false,
    "d": "A sophisticated blue texture that reads like a finely crafted artwork.",
+   "img": [
+    "assets/products/Complete-Wall-Design-12-1-480x600.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Complete-Wall-Design-12-1.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Close-Up-Design-12-1.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Original-Artboard-Design-12-1.jpg"
+   ],
    "long": "<p>Enter your wall dimensions and select your finish. Minimum order 0.5 m² (707mm × 707mm). Peel & stick, easy to apply, durable and removable.</p><h4>Finish options</h4><ul><li>Matte peel &amp; stick (standard)</li><li>Textured canvas peel &amp; stick</li></ul><p>Made from high-quality materials, easy to apply and durable. Supplied in panels sized to your wall.</p>",
    "opts": {
     "Finish": [
@@ -1539,6 +1889,12 @@
    ],
    "sold": false,
    "d": "A rich, textured green for calm, natural, elegant rooms.",
+   "img": [
+    "assets/products/Complete-Wall-Design-10-1-480x600.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Complete-Wall-Design-10-1.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Close-Up-Design-10-1.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Original-Artboard-Design-10-1.jpg"
+   ],
    "long": "<p>Enter your wall dimensions and select your finish. Minimum order 0.5 m² (707mm × 707mm). Peel & stick, easy to apply, durable and removable.</p><h4>Finish options</h4><ul><li>Matte peel &amp; stick (standard)</li><li>Textured canvas peel &amp; stick</li></ul><p>Made from high-quality materials, easy to apply and durable. Supplied in panels sized to your wall.</p>",
    "opts": {
     "Finish": [
@@ -1559,6 +1915,12 @@
    ],
    "sold": false,
    "d": "A contemporary wood pattern with a textured finish — natural warmth, modern flair.",
+   "img": [
+    "assets/products/Complete-Wall-Design-15-1-480x600.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Complete-Wall-Design-15-1.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Close-Up-Design-15-1.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Original-Artboard-Design-15-1.jpg"
+   ],
    "long": "<p>Enter your wall dimensions and select your finish. Minimum order 0.5 m² (707mm × 707mm). Peel & stick, easy to apply, durable and removable.</p><h4>Finish options</h4><ul><li>Matte peel &amp; stick (standard)</li><li>Textured canvas peel &amp; stick</li></ul><p>Made from high-quality materials, easy to apply and durable. Supplied in panels sized to your wall.</p>",
    "opts": {
     "Finish": [
@@ -1579,6 +1941,11 @@
    ],
    "sold": false,
    "d": "A mother unicorn gazing at her baby on a dreamy backdrop.",
+   "img": [
+    "assets/products/Complete-Wall-Design-17-480x600.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Close-Up-Design-17.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Original-Artboard-Design-17.jpg"
+   ],
    "long": "<p>Enter your wall dimensions and select your finish. Minimum order 0.5 m² (707mm × 707mm). Peel & stick, easy to apply, durable and removable.</p><h4>Finish options</h4><ul><li>Matte peel &amp; stick (standard)</li><li>Textured canvas peel &amp; stick</li></ul><p>Made from high-quality materials, easy to apply and durable. Supplied in panels sized to your wall.</p>",
    "opts": {
     "Finish": [
@@ -1599,6 +1966,12 @@
    ],
    "sold": false,
    "d": "A detailed city skyline — modern and professional for any workspace.",
+   "img": [
+    "assets/products/Complete-Wall-Design-23-480x600.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Complete-Wall-Design-23.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Close-Up-Design-23.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Original-Artboard-Design-23.jpg"
+   ],
    "long": "<p>Enter your wall dimensions and select your finish. Minimum order 0.5 m² (707mm × 707mm). Peel & stick, easy to apply, durable and removable.</p><h4>Finish options</h4><ul><li>Matte peel &amp; stick (standard)</li><li>Textured canvas peel &amp; stick</li></ul><p>Made from high-quality materials, easy to apply and durable. Supplied in panels sized to your wall.</p>",
    "opts": {
     "Finish": [
@@ -1619,6 +1992,12 @@
    ],
    "sold": false,
    "d": "Squirrels, deer, birds, foxes and a small bear in a colourful forest.",
+   "img": [
+    "assets/products/Complete-Wall-Design-21-480x600.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Complete-Wall-Design-21.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Close-Up-Design-21.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Original-Artboard-Design-21.jpg"
+   ],
    "long": "<p>Enter your wall dimensions and select your finish. Minimum order 0.5 m² (707mm × 707mm). Peel & stick, easy to apply, durable and removable.</p><h4>Finish options</h4><ul><li>Matte peel &amp; stick (standard)</li><li>Textured canvas peel &amp; stick</li></ul><p>Made from high-quality materials, easy to apply and durable. Supplied in panels sized to your wall.</p>",
    "opts": {
     "Finish": [
@@ -1639,6 +2018,12 @@
    ],
    "sold": false,
    "d": "A charming floral with vintage flair — classic beauty and nostalgia.",
+   "img": [
+    "assets/products/Complete-Wall-Design-3-2-480x600.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Complete-Wall-Design-3-2.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Close-Up-Design-3-2.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Original-Artboard-Design-3-2.jpg"
+   ],
    "long": "<p>Enter your wall dimensions and select your finish. Minimum order 0.5 m² (707mm × 707mm). Peel & stick, easy to apply, durable and removable.</p><h4>Finish options</h4><ul><li>Matte peel &amp; stick (standard)</li><li>Textured canvas peel &amp; stick</li></ul><p>Made from high-quality materials, easy to apply and durable. Supplied in panels sized to your wall.</p>",
    "opts": {
     "Finish": [
@@ -1659,6 +2044,12 @@
    ],
    "sold": false,
    "d": "Realistic white brick — exposed-brick appeal with a fresh, modern twist.",
+   "img": [
+    "assets/products/Complete-Wall-Design-9-2-480x600.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Complete-Wall-Design-9-2.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Close-Up-Design-9-2.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Original-Artboard-Design-9-2.jpg"
+   ],
    "long": "<p>Enter your wall dimensions and select your finish. Minimum order 0.5 m² (707mm × 707mm). Peel & stick, easy to apply, durable and removable.</p><h4>Finish options</h4><ul><li>Matte peel &amp; stick (standard)</li><li>Textured canvas peel &amp; stick</li></ul><p>Made from high-quality materials, easy to apply and durable. Supplied in panels sized to your wall.</p>",
    "opts": {
     "Finish": [
@@ -1679,6 +2070,12 @@
    ],
    "sold": false,
    "d": "A broken-tile effect in white granite — clean and contemporary for kitchens and bathrooms.",
+   "img": [
+    "assets/products/Complete-Wall-Design-14-2-480x600.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Complete-Wall-Design-14-2.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Close-Up-Design-14-2.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Original-Artboard-Design-14-2.jpg"
+   ],
    "long": "<p>Enter your wall dimensions and select your finish. Minimum order 0.5 m² (707mm × 707mm). Peel & stick, easy to apply, durable and removable.</p><h4>Finish options</h4><ul><li>Matte peel &amp; stick (standard)</li><li>Textured canvas peel &amp; stick</li></ul><p>Made from high-quality materials, easy to apply and durable. Supplied in panels sized to your wall.</p>",
    "opts": {
     "Finish": [
@@ -1699,6 +2096,12 @@
    ],
    "sold": false,
    "d": "A delicate leaf pattern in clean white — fresh, airy and refined.",
+   "img": [
+    "assets/products/Complete-Wall-Design-10-2-480x600.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Complete-Wall-Design-10-2.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Close-Up-Design-10-2.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Original-Artboard-Design-10-2.jpg"
+   ],
    "long": "<p>Enter your wall dimensions and select your finish. Minimum order 0.5 m² (707mm × 707mm). Peel & stick, easy to apply, durable and removable.</p><h4>Finish options</h4><ul><li>Matte peel &amp; stick (standard)</li><li>Textured canvas peel &amp; stick</li></ul><p>Made from high-quality materials, easy to apply and durable. Supplied in panels sized to your wall.</p>",
    "opts": {
     "Finish": [
@@ -1719,6 +2122,12 @@
    ],
    "sold": false,
    "d": "Realistic sandstone in clean white — modern luxury for lobbies and offices.",
+   "img": [
+    "assets/products/Complete-Wall-Design-11-1-480x600.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Complete-Wall-Design-11-1.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Close-Up-Design-11-1.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Original-Artboard-Design-11-1.jpg"
+   ],
    "long": "<p>Enter your wall dimensions and select your finish. Minimum order 0.5 m² (707mm × 707mm). Peel & stick, easy to apply, durable and removable.</p><h4>Finish options</h4><ul><li>Matte peel &amp; stick (standard)</li><li>Textured canvas peel &amp; stick</li></ul><p>Made from high-quality materials, easy to apply and durable. Supplied in panels sized to your wall.</p>",
    "opts": {
     "Finish": [
@@ -1739,6 +2148,12 @@
    ],
    "sold": false,
    "d": "A subtle floral with a sophisticated textured finish.",
+   "img": [
+    "assets/products/Complete-Wall-Design-13-2-480x600.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Complete-Wall-Design-13-2.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Close-Up-Design-13-2.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Original-Artboard-Design-13-2.jpg"
+   ],
    "long": "<p>Enter your wall dimensions and select your finish. Minimum order 0.5 m² (707mm × 707mm). Peel & stick, easy to apply, durable and removable.</p><h4>Finish options</h4><ul><li>Matte peel &amp; stick (standard)</li><li>Textured canvas peel &amp; stick</li></ul><p>Made from high-quality materials, easy to apply and durable. Supplied in panels sized to your wall.</p>",
    "opts": {
     "Finish": [
@@ -1759,6 +2174,11 @@
    ],
    "sold": false,
    "d": "A big bear, squirrels and rabbits in a snow-covered forest.",
+   "img": [
+    "assets/products/Original-Artboard-Design-15-480x600.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Complete-Wall-Design-15.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Close-Up-Design-15.jpg"
+   ],
    "long": "<p>Enter your wall dimensions and select your finish. Minimum order 0.5 m² (707mm × 707mm). Peel & stick, easy to apply, durable and removable.</p><h4>Finish options</h4><ul><li>Matte peel &amp; stick (standard)</li><li>Textured canvas peel &amp; stick</li></ul><p>Made from high-quality materials, easy to apply and durable. Supplied in panels sized to your wall.</p>",
    "opts": {
     "Finish": [
@@ -1779,6 +2199,12 @@
    ],
    "sold": false,
    "d": "A realistic wood-panel effect — rustic warmth with sophistication.",
+   "img": [
+    "assets/products/Complete-Wall-Design-16-1-480x600.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Complete-Wall-Design-16-1.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Close-Up-Design-16-1.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Original-Artboard-Design-16-1.jpg"
+   ],
    "long": "<p>Enter your wall dimensions and select your finish. Minimum order 0.5 m² (707mm × 707mm). Peel & stick, easy to apply, durable and removable.</p><h4>Finish options</h4><ul><li>Matte peel &amp; stick (standard)</li><li>Textured canvas peel &amp; stick</li></ul><p>Made from high-quality materials, easy to apply and durable. Supplied in panels sized to your wall.</p>",
    "opts": {
     "Finish": [
@@ -1799,6 +2225,12 @@
    ],
    "sold": false,
    "d": "A detailed, elegant world map for studies, offices and classrooms.",
+   "img": [
+    "assets/products/Complete-Wall-Design-9-1-480x600.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Complete-Wall-Design-9-1.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Close-Up-Design-9-1.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Original-Artboard-Design-9-1.jpg"
+   ],
    "long": "<p>Enter your wall dimensions and select your finish. Minimum order 0.5 m² (707mm × 707mm). Peel & stick, easy to apply, durable and removable.</p><h4>Finish options</h4><ul><li>Matte peel &amp; stick (standard)</li><li>Textured canvas peel &amp; stick</li></ul><p>Made from high-quality materials, easy to apply and durable. Supplied in panels sized to your wall.</p>",
    "opts": {
     "Finish": [
@@ -1814,6 +2246,12 @@
    "c": "cake-toppers",
    "p": 30.95,
    "d": "A single number in your chosen colour — the simplest way to mark the year. Available in twenty colours to match any cake design. Sized to suit a 6 inch cake. For custom sizes, colours or designs, email info@avantiprint.com.au for a tailored quote.",
+   "img": [
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Age-Topper.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/twenty-one1.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/twenty-one.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2020/07/colors1.jpg"
+   ],
    "opts": {
     "Colour": [
      "Gold mirror",
@@ -1850,6 +2288,10 @@
    "c": "cake-toppers",
    "p": 30.95,
    "d": "Your number set inside a clean circular ring. Available in twenty colours to match any cake design. Sized to suit a 6 inch cake. For custom sizes, colours or designs, email info@avantiprint.com.au for a tailored quote.",
+   "img": [
+    "assets/products/Age-Ring-480x550.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2020/07/colors1.jpg"
+   ],
    "opts": {
     "Colour": [
      "Gold mirror",
@@ -1886,6 +2328,10 @@
    "c": "cake-toppers",
    "p": 30.95,
    "d": "A symbol of enduring love and cherished memories — an elegant, sentimental touch for the anniversary cake. Available in twenty colours to match any cake design. Sized to suit a 6 inch cake. For custom sizes, colours or designs, email info@avantiprint.com.au for a tailored quote.",
+   "img": [
+    "assets/products/AnniversaryTopper1-480x550.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2020/07/colors1.jpg"
+   ],
    "opts": {
     "Colour": [
      "Gold mirror",
@@ -1918,6 +2364,10 @@
    "c": "cake-toppers",
    "p": 30.95,
    "d": "A classic bridal shower topper in flowing script. Available in twenty colours to match any cake design. Sized to suit a 6 inch cake. For custom sizes, colours or designs, email info@avantiprint.com.au for a tailored quote.",
+   "img": [
+    "assets/products/Bride-To-Be.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2020/07/colors1.jpg"
+   ],
    "opts": {
     "Colour": [
      "Gold mirror",
@@ -1950,6 +2400,10 @@
    "c": "cake-toppers",
    "p": 30.95,
    "d": "A delightful, meaningful topper to honour the bride-to-be before her big day. Available in twenty colours to match any cake design. Sized to suit a 6 inch cake. For custom sizes, colours or designs, email info@avantiprint.com.au for a tailored quote.",
+   "img": [
+    "assets/products/BridetobeTopper1.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2020/07/colors1.jpg"
+   ],
    "opts": {
     "Colour": [
      "Gold mirror",
@@ -1982,6 +2436,10 @@
    "c": "cake-toppers",
    "p": 30.95,
    "d": "A cross paired with the child's name for First Holy Communion. Available in twenty colours to match any cake design. Sized to suit a 6 inch cake. For custom sizes, colours or designs, email info@avantiprint.com.au for a tailored quote.",
+   "img": [
+    "assets/products/Communion-Cross-with-Name-480x550.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2020/07/colors1.jpg"
+   ],
    "opts": {
     "Colour": [
      "Gold mirror",
@@ -2018,6 +2476,10 @@
    "c": "cake-toppers",
    "p": 30.95,
    "d": "For graduations, promotions and every win worth a cake. Available in twenty colours to match any cake design. Sized to suit a 6 inch cake. For custom sizes, colours or designs, email info@avantiprint.com.au for a tailored quote.",
+   "img": [
+    "assets/products/Congrats-480x550.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2020/07/colors1.jpg"
+   ],
    "opts": {
     "Colour": [
      "Gold mirror",
@@ -2050,6 +2512,10 @@
    "c": "cake-toppers",
    "p": 30.95,
    "d": "A cross and dove for christenings, baptisms and communions. Available in twenty colours to match any cake design. Sized to suit a 6 inch cake. For custom sizes, colours or designs, email info@avantiprint.com.au for a tailored quote.",
+   "img": [
+    "assets/products/Cross-and-Dove-480x550.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2020/07/colors1.jpg"
+   ],
    "opts": {
     "Colour": [
      "Gold mirror",
@@ -2082,6 +2548,10 @@
    "c": "cake-toppers",
    "p": 30.95,
    "d": "A graceful cross — a symbol of significance for your special occasion. Available in twenty colours to match any cake design. Sized to suit a 6 inch cake. For custom sizes, colours or designs, email info@avantiprint.com.au for a tailored quote.",
+   "img": [
+    "assets/products/CrossTopper.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2020/07/colors1.jpg"
+   ],
    "opts": {
     "Colour": [
      "Gold mirror",
@@ -2114,6 +2584,10 @@
    "c": "cake-toppers",
    "p": 30.95,
    "d": "Celebrate the yes with a simple \"Engaged\" script. Available in twenty colours to match any cake design. Sized to suit a 6 inch cake. For custom sizes, colours or designs, email info@avantiprint.com.au for a tailored quote.",
+   "img": [
+    "assets/products/Engaged.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2020/07/colors1.jpg"
+   ],
    "opts": {
     "Colour": [
      "Gold mirror",
@@ -2146,6 +2620,10 @@
    "c": "cake-toppers",
    "p": 30.95,
    "d": "\"First Holy Communion\" with the child's name and a cross. Available in twenty colours to match any cake design. Sized to suit a 6 inch cake. For custom sizes, colours or designs, email info@avantiprint.com.au for a tailored quote.",
+   "img": [
+    "assets/products/First-Holy-Communion-with-Name-and-Cross-480x550.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2020/07/colors1.jpg"
+   ],
    "opts": {
     "Colour": [
      "Gold mirror",
@@ -2182,6 +2660,10 @@
    "c": "cake-toppers",
    "p": 30.95,
    "d": "\"Happy Birthday\" personalised with any name. Available in twenty colours to match any cake design. Sized to suit a 6 inch cake. For custom sizes, colours or designs, email info@avantiprint.com.au for a tailored quote.",
+   "img": [
+    "assets/products/Happy-Birthday-with-Name-480x550.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2020/07/colors1.jpg"
+   ],
    "opts": {
     "Colour": [
      "Gold mirror",
@@ -2218,6 +2700,10 @@
    "c": "cake-toppers",
    "p": 30.95,
    "d": "\"Happy\" plus name and age in one topper. Available in twenty colours to match any cake design. Sized to suit a 6 inch cake. For custom sizes, colours or designs, email info@avantiprint.com.au for a tailored quote.",
+   "img": [
+    "assets/products/happy-birthday-with-name-and-age-480x550.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2020/07/colors1.jpg"
+   ],
    "opts": {
     "Colour": [
      "Gold mirror",
@@ -2254,6 +2740,10 @@
    "c": "cake-toppers",
    "p": 30.95,
    "d": "For the hens night cake — \"Last Fling\" in script. Available in twenty colours to match any cake design. Sized to suit a 6 inch cake. For custom sizes, colours or designs, email info@avantiprint.com.au for a tailored quote.",
+   "img": [
+    "assets/products/Last-Fling-480x550.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2020/07/colors1.jpg"
+   ],
    "opts": {
     "Colour": [
      "Gold mirror",
@@ -2286,6 +2776,10 @@
    "c": "cake-toppers",
    "p": 30.95,
    "d": "\"Love\" struck through with an arrow. Available in twenty colours to match any cake design. Sized to suit a 6 inch cake. For custom sizes, colours or designs, email info@avantiprint.com.au for a tailored quote.",
+   "img": [
+    "assets/products/Love-With-Arrow-480x550.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2020/07/colors1.jpg"
+   ],
    "opts": {
     "Colour": [
      "Gold mirror",
@@ -2318,6 +2812,10 @@
    "c": "cake-toppers",
    "p": 30.95,
    "d": "Name over age — the birthday classic. Available in twenty colours to match any cake design. Sized to suit a 6 inch cake. For custom sizes, colours or designs, email info@avantiprint.com.au for a tailored quote.",
+   "img": [
+    "assets/products/Name-and-Age.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2020/07/colors1.jpg"
+   ],
    "opts": {
     "Colour": [
      "Gold mirror",
@@ -2354,6 +2852,10 @@
    "c": "cake-toppers",
    "p": 30.95,
    "d": "Any name in flowing script. Available in twenty colours to match any cake design. Sized to suit a 6 inch cake. For custom sizes, colours or designs, email info@avantiprint.com.au for a tailored quote.",
+   "img": [
+    "https://avantiprint.com.au/wp-content/uploads/2025/04/Name-Topper.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2020/07/colors1.jpg"
+   ],
    "opts": {
     "Colour": [
      "Gold mirror",
@@ -2390,6 +2892,10 @@
    "c": "cake-toppers",
    "p": 30.95,
    "d": "A name set inside a circular ring. Available in twenty colours to match any cake design. Sized to suit a 6 inch cake. For custom sizes, colours or designs, email info@avantiprint.com.au for a tailored quote.",
+   "img": [
+    "assets/products/Name-Ring-480x550.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2020/07/colors1.jpg"
+   ],
    "opts": {
     "Colour": [
      "Gold mirror",
@@ -2426,6 +2932,10 @@
    "c": "cake-toppers",
    "p": 30.95,
    "d": "A name combined with a cross design — a personalised, elegant centrepiece. Available in twenty colours to match any cake design. Sized to suit a 6 inch cake. For custom sizes, colours or designs, email info@avantiprint.com.au for a tailored quote.",
+   "img": [
+    "assets/products/NamewithCrossTopper1.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2020/07/colors1.jpg"
+   ],
    "opts": {
     "Colour": [
      "Gold mirror",
@@ -2462,6 +2972,10 @@
    "c": "cake-toppers",
    "p": 30.95,
    "d": "\"Oh Baby\" inside a leafy wreath for baby showers. Available in twenty colours to match any cake design. Sized to suit a 6 inch cake. For custom sizes, colours or designs, email info@avantiprint.com.au for a tailored quote.",
+   "img": [
+    "assets/products/Oh-Baby-Wreath-480x550.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2020/07/colors1.jpg"
+   ],
    "opts": {
     "Colour": [
      "Gold mirror",
@@ -2494,6 +3008,10 @@
    "c": "cake-toppers",
    "p": 30.95,
    "d": "A gold mirror tree with silver mirror star, personalised with your family name — use it year after year. Available in twenty colours to match any cake design. Sized to suit a 6 inch cake. For custom sizes, colours or designs, email info@avantiprint.com.au for a tailored quote.",
+   "img": [
+    "assets/products/The-Vella-Family-Christmas-Cake-Topper.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2020/07/colors1.jpg"
+   ],
    "opts": {
     "Colour": [
      "Gold mirror",
@@ -2530,6 +3048,10 @@
    "c": "cake-toppers",
    "p": 30.95,
    "d": "The nursery rhyme classic for baby showers and first birthdays. Available in twenty colours to match any cake design. Sized to suit a 6 inch cake. For custom sizes, colours or designs, email info@avantiprint.com.au for a tailored quote.",
+   "img": [
+    "assets/products/Twinkle-Twinkle-Little-Star-480x550.jpg",
+    "https://avantiprint.com.au/wp-content/uploads/2020/07/colors1.jpg"
+   ],
    "opts": {
     "Colour": [
      "Gold mirror",

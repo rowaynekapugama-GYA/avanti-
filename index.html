@@ -5,7 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Avanti Print &amp; Design — Custom print &amp; packaging, made in Western Sydney</title>
 <meta name="description" content="Custom mailer boxes, shipping cartons, pull up banners, signage, peel &amp; stick wallpaper and cake toppers. Printed in-house in Western Sydney. Order by 12pm for next business day dispatch.">
-<link rel="icon" href="assets/logo-trim.png">
+<link rel="icon" href="assets/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="assets/avanti-favicon-512.png" sizes="512x512">
+<link rel="icon" type="image/png" href="assets/icon-192.png" sizes="192x192">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<meta name="theme-color" content="#C41E2A">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -82,7 +86,7 @@ p{margin:0 0 1em}
 
 /* ---------- header ---------- */
 .header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
-.header .wrap{display:flex;align-items:center;gap:28px;height:74px}
+.header > .wrap{display:flex;align-items:center;gap:28px;height:74px}
 .logo img{height:38px;width:auto}
 .nav{display:flex;gap:6px;margin-left:8px}
 .nav>a,.nav>button{padding:10px 14px;border-radius:999px;font-weight:600;font-size:.92rem;display:inline-flex;align-items:center;gap:6px}
@@ -95,7 +99,7 @@ p{margin:0 0 1em}
 .cart-count{position:absolute;top:2px;right:0;background:var(--red);color:#fff;font-family:var(--mono);font-size:.62rem;min-width:18px;height:18px;border-radius:9px;display:flex;align-items:center;justify-content:center;padding:0 5px;font-weight:600}
 .cart-count:empty{display:none}
 .burger{display:none}
-@media(max-width:960px){.nav{display:none}.burger{display:inline-flex}.header .wrap{height:64px}.logo img{height:32px}}
+@media(max-width:960px){.nav{display:none}.mega{display:none !important}.burger{display:inline-flex}.header > .wrap{height:64px}.logo img{height:32px}}
 
 /* mega menu */
 .mega{position:absolute;left:0;right:0;top:100%;background:#fff;border-bottom:1px solid var(--line);box-shadow:0 30px 50px -30px rgba(0,0,0,.25);display:none;padding:28px 0 32px}
@@ -133,21 +137,30 @@ p{margin:0 0 1em}
 .search-bar input{flex:1;padding:14px 18px;border:1.5px solid var(--line);border-radius:999px;font-size:1rem}
 .search-bar input:focus{border-color:var(--ink);outline:none}
 
-/* ---------- hero ---------- */
-.hero{background:var(--paper-2);overflow:hidden;position:relative}
-.hero .wrap{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:48px;align-items:center;padding-top:clamp(40px,6vw,80px);padding-bottom:clamp(40px,6vw,80px);min-height:560px}
-.hero h1 span{color:var(--red)}
-.hero .wrap>*{min-width:0}
-.hero .ctas .btn{white-space:normal;text-align:center}
-.hero .lead{font-size:1.12rem;color:var(--ink-2);max-width:48ch;margin:22px 0 30px}
-.hero .ctas{display:flex;gap:12px;flex-wrap:wrap}
-.hero .proof{display:flex;gap:28px;justify-content:space-between;max-width:460px;margin-top:38px;padding-top:26px;border-top:1px solid var(--line);flex-wrap:wrap}
-.hero .proof div{font-size:.85rem;color:var(--ink-3)}
-.hero .proof strong{display:block;font-family:var(--display);font-size:1.35rem;color:var(--ink);letter-spacing:-.02em}
-.frame{display:block;width:100%;position:relative;aspect-ratio:1/1.05;border-radius:var(--r-lg);overflow:hidden;background:#fff;box-shadow:var(--shadow)}
-.frame img{width:100%;height:100%;object-fit:cover}
-.spec{position:absolute;left:18px;bottom:18px;background:#fff;border-radius:var(--r);padding:10px 14px;font-family:var(--mono);font-size:.74rem;box-shadow:var(--shadow);display:flex;gap:14px;align-items:center}
-.spec b{font-weight:500;color:var(--red)}
+/* ---------- hero slider ---------- */
+.hero{position:relative;overflow:hidden;height:min(78vh,720px);min-height:520px;background:var(--ink)}
+.hero .slide{position:absolute;inset:0;opacity:0;transition:opacity .8s ease;pointer-events:none}
+.hero .slide.active{opacity:1;pointer-events:auto}
+.hero .slide>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero .slide::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(15,14,18,.66) 0%,rgba(15,14,18,.38) 45%,rgba(15,14,18,.08) 75%),linear-gradient(to top,rgba(15,14,18,.45),transparent 40%)}
+.hero .slide .wrap{position:relative;z-index:1;height:100%;display:flex;flex-direction:column;justify-content:center;align-items:flex-start}
+.hero .s-eyebrow{font-family:var(--mono);font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;color:#fff;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.28);backdrop-filter:blur(4px);padding:8px 14px;border-radius:999px;margin-bottom:22px}
+.hero h1{color:#fff;font-size:clamp(2.6rem,6vw,4.6rem);line-height:1.02;letter-spacing:-.03em;max-width:12ch}
+.hero .lead{font-size:clamp(1rem,1.4vw,1.16rem);color:rgba(255,255,255,.88);max-width:46ch;margin:20px 0 32px}
+.hero .btn-hero{display:inline-flex;align-items:center;gap:10px;background:#fff;color:var(--ink);border-radius:999px;padding:15px 28px;font-weight:650;transition:transform .2s,box-shadow .2s;box-shadow:0 16px 40px -16px rgba(0,0,0,.5)}
+.hero .btn-hero:hover{transform:translateY(-2px)}
+.hero .btn-hero svg{width:17px;height:17px;stroke:currentColor;fill:none;stroke-width:2.2}
+.hero .proof{display:flex;gap:clamp(20px,3.5vw,44px);margin-top:36px;padding-top:24px;border-top:1px solid rgba(255,255,255,.28);flex-wrap:wrap}
+.hero .proof div{font-size:.85rem;color:rgba(255,255,255,.78)}
+.hero .proof strong{display:block;font-family:var(--display);font-size:1.4rem;color:#fff;letter-spacing:-.02em}
+@media(max-width:600px){.hero .proof{gap:16px;margin-top:28px;padding-top:18px}.hero .proof div{font-size:.74rem}.hero .proof strong{font-size:1.15rem}.hero .slide .wrap{padding-bottom:76px}.hero .dots{bottom:26px}.hero .h-nav{display:none}}
+.hero .h-nav{position:absolute;right:max(24px,calc((100vw - var(--w))/2 + 24px));bottom:28px;z-index:2;display:flex;gap:10px}
+.hero .h-nav button{width:46px;height:46px;border-radius:999px;border:1px solid rgba(255,255,255,.45);background:rgba(255,255,255,.12);backdrop-filter:blur(6px);display:grid;place-items:center;cursor:pointer;transition:background .2s}
+.hero .h-nav button:hover{background:rgba(255,255,255,.28)}
+.hero .h-nav svg{width:18px;height:18px;stroke:#fff;fill:none;stroke-width:2}
+.hero .dots{position:absolute;left:max(24px,calc((100vw - var(--w))/2 + 24px));bottom:42px;z-index:2;display:flex;gap:8px}
+.hero .dots button{width:26px;height:4px;border-radius:999px;background:rgba(255,255,255,.35);border:none;cursor:pointer;transition:background .25s,width .25s;padding:0}
+.hero .dots button.active{background:#fff;width:44px}
 /* registration/crop marks — the print-shop signature */
 .crop{position:relative}
 .crop::before,.crop::after,.crop>i::before,.crop>i::after{content:"";position:absolute;width:22px;height:22px;border-color:var(--ink);border-style:solid;border-width:0;opacity:.9;pointer-events:none}
@@ -157,7 +170,7 @@ p{margin:0 0 1em}
 .crop>i::after{bottom:-12px;right:-12px;border-bottom-width:1.5px;border-right-width:1.5px}
 .crop>i{position:absolute;inset:0;pointer-events:none}
 .crop-label{position:absolute;top:-30px;right:0;font-family:var(--mono);font-size:.66rem;color:var(--ink-3);letter-spacing:.06em;text-transform:uppercase}
-@media(max-width:900px){.hero .wrap{grid-template-columns:minmax(0,1fr);gap:44px;min-height:0}.hero .frame{aspect-ratio:4/3;max-height:420px}.crop-label{display:none}.hero .proof{gap:12px;max-width:none}.hero .proof div{flex:1;font-size:.78rem}.hero .proof strong{font-size:1.2rem}}
+@media(max-width:900px){.hero{height:70vh;min-height:480px}.crop-label{display:none}.hero .dots{bottom:34px}.hero .h-nav{bottom:22px}}
 
 /* ---------- trust strip ---------- */
 .trust{border-bottom:1px solid var(--line)}
@@ -171,42 +184,53 @@ p{margin:0 0 1em}
 @media(max-width:900px){.trust .wrap{grid-template-columns:1fr 1fr}.trust .item:nth-child(3){border-left:0;padding-left:0}.trust .item:nth-child(n+3){border-top:1px solid var(--line)}}
 @media(max-width:520px){.trust .wrap{grid-template-columns:1fr}.trust .item+.item{border-left:0;padding-left:0;border-top:1px solid var(--line)}.trust .item{padding:16px 0}}
 
-/* ---------- category tiles ---------- */
-.cat-groups{display:grid;gap:40px}
-.cat-group h3{display:flex;align-items:baseline;gap:12px;margin-bottom:16px;font-size:1.35rem}
+/* ---------- category tiles / carousels ---------- */
+.cat-groups{display:grid;gap:48px;grid-template-columns:minmax(0,1fr)}
+.cat-group{min-width:0}
+.cat-group .g-head{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:18px}
+.cat-group h3{display:flex;align-items:baseline;gap:12px;font-size:1.35rem;margin:0}
 .cat-group h3 small{font-family:var(--mono);font-size:.7rem;color:var(--ink-3);font-weight:400;letter-spacing:.04em}
-.tiles{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
-.tiles.wide{grid-template-columns:1fr 1fr}
+.crsl-nav{display:flex;gap:10px}
+.crsl-nav button{width:46px;height:46px;border:1px solid var(--line);border-radius:14px;background:#fff;display:grid;place-items:center;transition:border-color .2s,opacity .2s;cursor:pointer}
+.crsl-nav button:hover{border-color:var(--ink)}
+.crsl-nav button[disabled]{opacity:.35;cursor:default;border-color:var(--line)}
+.crsl-nav svg{width:18px;height:18px;stroke:var(--ink);fill:none;stroke-width:2}
+.track{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;-webkit-overflow-scrolling:touch;padding:2px}
+.track::-webkit-scrollbar{display:none}
+.ctile{flex:0 0 clamp(200px,17.5vw,252px);scroll-snap-align:start;display:block}
+.ctile .thumb{aspect-ratio:3/4;border-radius:var(--r-lg);overflow:hidden;background:var(--paper-2);position:relative}
+.ctile .thumb img{width:100%;height:100%;object-fit:cover;transition:transform .45s}
+.ctile:hover .thumb img{transform:scale(1.04)}
+.ctile .desc{position:absolute;left:0;right:0;bottom:0;padding:56px 16px 16px;color:#fff;font-size:.86rem;line-height:1.5;background:linear-gradient(to top,rgba(23,22,26,.82) 40%,rgba(23,22,26,0));opacity:0;transform:translateY(10px);transition:opacity .28s,transform .28s;pointer-events:none}
+.ctile:hover .desc,.ctile:focus-visible .desc{opacity:1;transform:none}
+.ctile>b{display:block;margin-top:12px;font-family:var(--display);font-size:1.08rem;letter-spacing:-.01em;color:var(--ink)}
+.ctile>span{font-family:var(--mono);font-size:.7rem;color:var(--ink-3);letter-spacing:.04em}
+.tiles.wide{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.tiles.wide .ctile{flex:none}
 .tiles.wide .thumb{aspect-ratio:16/8}
-.tiles.wide .meta b{font-size:1.25rem}
-@media(max-width:1000px){.tiles{grid-template-columns:repeat(3,1fr)}}
-.tile{display:block;background:var(--paper-2);border-radius:var(--r-lg);overflow:hidden;transition:transform .2s,box-shadow .2s;border:1px solid transparent}
-.tile:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:var(--line)}
-.tile .thumb{aspect-ratio:4/3;overflow:hidden;background:var(--kraft-tint)}
-.tile .thumb img{width:100%;height:100%;object-fit:cover}
-.tile .meta{padding:12px 14px 14px}
-.tile .meta b{display:block;font-family:var(--display);font-size:1.02rem;letter-spacing:-.01em}
-.tile .meta span{font-family:var(--mono);font-size:.7rem;color:var(--ink-3)}
-@media(max-width:600px){.tiles,.tiles.wide{grid-template-columns:1fr 1fr;gap:10px}.tiles.wide .thumb{aspect-ratio:4/3}.tiles.wide .meta b{font-size:1.02rem}}
+@media(max-width:600px){.tiles.wide{grid-template-columns:1fr 1fr;gap:12px}.tiles.wide .thumb{aspect-ratio:4/3}.ctile{flex-basis:64vw}.ctile .desc{display:none}}
 
 /* ---------- product grid & card ---------- */
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:22px 18px}
 @media(max-width:600px){.grid{grid-template-columns:1fr 1fr;gap:18px 12px}}
 .card{display:flex;flex-direction:column;position:relative}
-.card .thumb{aspect-ratio:1/1;border-radius:var(--r-lg);overflow:hidden;background:var(--paper-2);position:relative;border:1px solid var(--line-2)}
+.card .thumb{aspect-ratio:1/1;border-radius:var(--r-lg);overflow:hidden;background:var(--paper-2);position:relative}
 .card .thumb img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
-.card:hover .thumb img{transform:scale(1.04)}
-.card .badge{position:absolute;top:10px;left:10px;font-family:var(--mono);font-size:.64rem;letter-spacing:.06em;text-transform:uppercase;background:#fff;padding:5px 9px;border-radius:999px;box-shadow:var(--shadow)}
+.card:hover .thumb img{transform:scale(1.03)}
+.card .badge{position:absolute;top:14px;left:14px;font-family:var(--mono);font-size:.66rem;letter-spacing:.06em;text-transform:uppercase;background:#fff;padding:6px 11px;border-radius:999px;box-shadow:var(--shadow);z-index:1}
 .card .badge.out{background:var(--ink);color:#fff}
 .card .badge.bulk{background:var(--red);color:#fff}
-.card .body{padding:12px 2px 0;display:flex;flex-direction:column;gap:4px;flex:1}
-.card .cat{font-family:var(--mono);font-size:.68rem;color:var(--ink-3);letter-spacing:.04em;text-transform:uppercase}
-.card h3{font-size:1.02rem;font-weight:600;letter-spacing:-.01em;line-height:1.25}
+.card .quick{position:absolute;left:14px;right:14px;bottom:14px;z-index:2;opacity:0;transform:translateY(8px);transition:opacity .25s,transform .25s}
+.card:hover .quick,.card:focus-within .quick{opacity:1;transform:none}
+@media(hover:none){.card .quick{opacity:1;transform:none}}
+.card .quick .btn{width:100%;border-radius:999px;box-shadow:0 10px 24px -10px rgba(0,0,0,.35)}
+.card .body{padding:14px 2px 0;display:flex;flex-direction:column;gap:3px}
+.card h3{font-size:1.05rem;font-weight:650;letter-spacing:-.01em;line-height:1.3}
 .card h3 a::after{content:"";position:absolute;inset:0}
-.card .price{font-family:var(--mono);font-size:.86rem;margin-top:4px}
-.card .price small{color:var(--ink-3);font-size:.72rem;margin-right:4px}
-.card .quick{margin-top:auto;padding-top:12px;position:relative;z-index:1}
-.card .quick .btn{width:100%}
+.card h3 a:hover{color:var(--red)}
+.card .cat{font-size:.9rem;color:var(--ink-3)}
+.card .price{font-family:var(--mono);font-size:1rem;font-weight:600;margin-top:6px}
+.card .price small{color:var(--ink-3);font-size:.74rem;margin-right:4px;font-weight:400}
 /* placeholder art for products with no photo yet */
 .ph{width:100%;height:100%;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:6px;background:repeating-linear-gradient(135deg,var(--kraft-tint) 0 10px,#F9F3E8 10px 20px);color:#8A6E45}
 .ph b{font-family:var(--display);font-size:2.6rem;letter-spacing:-.04em;opacity:.65}
@@ -489,15 +513,15 @@ const CATS = [
   {s:'shipping-cartons',  n:'Shipping Cartons',  g:'Packaging', blurb:'Heavy-duty B-flute cartons, printed single or double side.', img:U+'2025/06/shipping-cartoon-image-new.jpg'},
   // Signage
   {s:'pull-up-banners',   n:'Pull Up Banners',   g:'Signage',   blurb:'Standard, premium and double-sided stands with carry case. From $84.', img:U+'2025/04/A8-stadard.jpg'},
-  {s:'a-frames',          n:'A-Frames',          g:'Signage',   blurb:'Street-ready footpath signs, two styles, two sizes.'},
-  {s:'corflute',          n:'Corflute',          g:'Signage',   blurb:'Lightweight, weather-resistant signs for sites and events.'},
-  {s:'acm-panels',        n:'ACM Panels',        g:'Signage',   blurb:'Rigid aluminium composite for shopfronts and long-term outdoor use.'},
-  {s:'foam-pvc',          n:'Foam PVC',          g:'Signage',   blurb:'Smooth, durable substrate for indoor and outdoor signage.'},
-  {s:'foamboard',         n:'Foamboard',         g:'Signage',   blurb:'Cost-effective indoor displays and point-of-sale.'},
-  {s:'enviroboard',       n:'EnviroBoard',       g:'Signage',   blurb:'Fully recyclable alternative to foamboard and PVC.'},
-  {s:'posters',           n:'Posters',           g:'Signage',   blurb:'Vibrant full-colour prints on professional stocks.'},
-  {s:'window-graphics',   n:'Window Graphics',   g:'Signage',   blurb:'Decals for glass — short-term promos or long-term branding.'},
-  {s:'floor-decals',      n:'Floor Decals',      g:'Signage',   blurb:'Anti-slip graphics for wayfinding, promos and safety.'},
+  {s:'a-frames',          n:'A-Frames',          g:'Signage',   blurb:'Street-ready footpath signs, two styles, two sizes.', img:U+'2025/10/A-frame-fetured-img.jpg'},
+  {s:'corflute',          n:'Corflute',          g:'Signage',   blurb:'Lightweight, weather-resistant signs for sites and events.', img:U+'2025/10/corflute-1.jpg'},
+  {s:'acm-panels',        n:'ACM Panels',        g:'Signage',   blurb:'Rigid aluminium composite for shopfronts and long-term outdoor use.', img:U+'2025/10/Acm-02.jpg'},
+  {s:'foam-pvc',          n:'Foam PVC',          g:'Signage',   blurb:'Smooth, durable substrate for indoor and outdoor signage.', img:U+'2025/10/pvc3.jpg'},
+  {s:'foamboard',         n:'Foamboard',         g:'Signage',   blurb:'Cost-effective indoor displays and point-of-sale.', img:U+'2025/10/foam-board-1.jpg'},
+  {s:'enviroboard',       n:'EnviroBoard',       g:'Signage',   blurb:'Fully recyclable alternative to foamboard and PVC.', img:U+'2025/10/enviro-board-1.jpg'},
+  {s:'posters',           n:'Posters',           g:'Signage',   blurb:'Vibrant full-colour prints on professional stocks.', img:'assets/products/posters-1-480x600.jpg'},
+  {s:'window-graphics',   n:'Window Graphics',   g:'Signage',   blurb:'Decals for glass — short-term promos or long-term branding.', img:'assets/products/window-graphics-2-480x600.jpg'},
+  {s:'floor-decals',      n:'Floor Decals',      g:'Signage',   blurb:'Anti-slip graphics for wayfinding, promos and safety.', img:U+'2025/10/floor-decols2.jpg'},
   // Home & celebrations
   {s:'wallpaper',         n:'Peel & Stick Wallpaper', g:'Home & Celebrations', blurb:'Made to your wall dimensions. Kids, office, texture and pattern designs.', img:U+'2025/04/1-copy-1.jpg'},
   {s:'cake-toppers',      n:'Cake Toppers',      g:'Home & Celebrations', blurb:'Personalised acrylic toppers in twenty colours, sized for a 6" cake.', img:U+'2025/04/1-copy.jpg'},
@@ -507,6 +531,18 @@ const GROUPS = ['Packaging','Signage','Home & Celebrations'];
 const BANNER_COPY = 'Make a strong impression with our pull-up banner – the go-to for events, trade shows, retail displays and in-store promotions. Lightweight, compact and supplied with a carry case. High-resolution print on durable, curl-resistant material with a sturdy aluminium base and retractable mechanism.';
 const BANNER_LONG = `<h4>Features</h4><ul><li>Size: 850mm (W) × 2000mm (H)</li><li>Vibrant full-colour print on high-quality material</li><li>Sturdy retractable base with support pole</li><li>Includes padded carry case</li><li>Ideal for indoor use</li></ul><p>Perfect for showcasing your brand, promoting offers or grabbing attention — wherever you go.</p>`;
 const BANNER_IMGS = ['A4','A2','A3','A5','A6','A7','A8','A9','A1'].map(a=>U+'2025/04/'+a+'-stadard.jpg');
+/* Signage gallery images scraped from live product pages (uploads/2025/10) */
+const S10 = f => U+'2025/10/'+f+'.jpg';
+const IMGS_AFRAME   = ['A-frame-fetured-img','A-frame-03','A-frame-02','A-frame-6','A-frame-5','A-frame4'].map(S10);
+const IMGS_ACM      = ['Acm-02','Acm-03','Acm-1','Acm-7','Acm-6','Acm-5','Acm-4'].map(S10);
+const IMGS_CORFLUTE = ['corflute-1','corflute-3','corflute-2','corflute-6','corflute-5','corflute-4'].map(S10);
+const IMGS_ENVIRO   = ['enviro-board-1','enviroboard-3','enviro-board2','enviroboard-6','enviroboard-5','enviroboard-4'].map(S10);
+const IMGS_FLOOR    = ['floor-decols2','floor-decals-3','floor-decols','floor-decols6','floor-decols5','floor-decols-4'].map(S10);
+const IMGS_PVC      = ['pvc3','pvc-2','pvc-foam-1','pvc6','pvc5','pvc4'].map(S10);
+const IMGS_FOAM     = ['foam-board-1','foam-board-3','foam-board-2','foam-board-6','foam-board-5','foam-board-4'].map(S10);
+const POSTER_IMGS = ['assets/products/posters-1-480x600.jpg','assets/products/posters-4.jpg']; /* supplied by Avanti — large-format poster prints */
+const WG_IMGS = ['assets/products/window-graphics-2-480x600.jpg','assets/products/window-graphics-3.jpg']; /* supplied by Avanti — printed shopfront window decals */
+const CT_CHART = U+'2020/07/colors1.jpg'; /* shared colour chart used on live topper pages */
 const BOX_OPTS_MAILER = {
   'Material':['White E Flute 1.5mm','White B Flute 3mm','Kraft B Flute 3mm'],
   'Size (mm)':['95 × 90 × 40','135 × 95 × 25','150 × 100 × 50','155 × 155 × 102','180 × 140 × 25','203 × 203 × 155','225 × 160 × 80','230 × 180 × 70','250 × 180 × 100','260 × 205 × 105','305 × 305 × 130','315 × 230 × 100','355 × 255 × 150','280 × 150 × 40 (AusPost satchel friendly)','290 × 175 × 60 (AusPost satchel friendly)','300 × 210 × 70 (AusPost satchel friendly)','410 × 330 × 70 (AusPost satchel friendly)','230 × 160 × 40 (paper sizes)','315 × 220 × 50 (paper sizes)','440 × 310 × 60 (paper sizes)'],
@@ -539,87 +575,89 @@ const PRODUCTS = [
    d:'Simple, strong and reliable. High-quality unbranded cartons in sturdy corrugated cardboard — ideal for shipping, storage, moving or bulk dispatch. A range of sizes, no branding, perfect for clean and discreet shipping.'},
 
   /* ---- Signage ---- */
-  {s:'a-frames', n:'A-Frames', c:'a-frames', p:160, pmax:400, opts:{'Style':['Standard','Premium'],'Size':['A1 (594 × 841mm)','A2 (420 × 594mm)']}, d:SIGN('Tough, reliable, custom-branded street signage','Make your message stand out with professional-grade A-frames, available in two styles and two sizes. Perfect for retail, hospitality, real estate and events.')},
-  {s:'acm-panels', n:'ACM Panels', c:'acm-panels', p:25.20, pmax:453.60, opts:{'Size':['A4','A3','A2','A1','A0','Custom — see Custom Dimensions']}, d:SIGN('Strong, weatherproof, long-lasting signage','Aluminium Composite Material panels give a sleek, rigid and highly durable signage solution — ideal for shopfronts, building fascia, directional signage, directories and outdoor branding.')},
-  {s:'acm-panels-custom-dimensions', n:'ACM Panels – Custom Dimensions', c:'acm-panels', p:160, d:SIGN('Strong, weatherproof, long-lasting signage','Need a size that isn\'t standard? Order ACM at your own dimensions. Enter your width and height and we\'ll cut to size.'), tags:['custom']},
-  {s:'corflute-signs', n:'Corflute Signs', c:'corflute', p:7.68, pmax:155.52, opts:{'Size':['A4','A3','A2','A1','A0'],'Sides':['Single sided','Double sided']}, d:SIGN('Lightweight, affordable, weather-resistant','The go-to solution for short to medium-term signage. Durable, versatile and cost-effective — perfect for events, construction sites, real estate and promotional campaigns.')},
-  {s:'corflute-signs-custom-dimensions', n:'Corflute Signs – Custom Dimensions', c:'corflute', p:32, d:SIGN('Lightweight, affordable, weather-resistant','Corflute cut to your exact dimensions for site hoardings, event signage and anything non-standard.'), tags:['custom']},
-  {s:'enviroboard', n:'EnviroBoard', c:'enviroboard', p:12, pmax:233.28, opts:{'Size':['A4','A3','A2','A1','A0']}, d:SIGN('Eco-friendly, lightweight, fully recyclable','A sustainable alternative to foamboard or PVC signage. Made from environmentally conscious materials, ideal for brands prioritising eco-responsibility.')},
-  {s:'floor-decals', n:'Floor Decals', c:'floor-decals', p:3.60, pmax:40, opts:{'Size':['A5','A4','A3','A2','A1'],'Shape':['Rectangle','Circle']}, d:SIGN('Durable anti-slip graphics for indoor and outdoor floors','Turn foot traffic into brand engagement — direct customers, promote sales or reinforce safety. Printed on tough, anti-slip materials designed for high-traffic conditions.')},
-  {s:'floor-decals-custom', n:'Floor Decals – Custom Dimensions', c:'floor-decals', p:160, d:SIGN('Durable anti-slip graphics for indoor and outdoor floors','Custom-sized floor graphics for wayfinding, promotions and safety zones.'), tags:['custom']},
-  {s:'foam-pvc', n:'Foam PVC', c:'foam-pvc', p:9.60, pmax:248.83, opts:{'Size':['A4','A3','A2','A1','A0'],'Thickness':['3mm','5mm']}, d:SIGN('Durable, smooth, suitable indoors and out','Foam PVC (also known as Forex or Palight) is a rigid signage substrate for long-term internal and external signage with excellent print quality, durability and weather resistance.')},
-  {s:'foamboard', n:'Foamboard', c:'foamboard', p:8.40, pmax:171.07, opts:{'Size':['A4','A3','A2','A1','A0']}, d:SIGN('Lightweight, smooth, ideal for indoor signage','A cost-effective solution for indoor displays, presentations and point-of-sale. Rigid structure and a clean white surface for high-impact prints in a professional setting.')},
-  {s:'foamboard-custom', n:'Foamboard – Custom Dimension', c:'foamboard', p:35, d:SIGN('Lightweight, smooth, ideal for indoor signage','Foamboard cut to your dimensions for displays, presentations and point-of-sale.'), tags:['custom']},
-  {s:'posters', n:'Posters', c:'posters', p:2.50, pmax:40, opts:{'Size':['A4','A3','A2','A1','A0'],'Stock':['170gsm satin','200gsm gloss','Synthetic (tear-resistant)']}, d:SIGN('Vibrant, high-impact prints for promotions, retail and events','For a product launch, retail sale or internal comms, our posters deliver stunning visuals with crisp detail and colour accuracy. A range of professional paper stocks and sizes to suit any campaign.')},
-  {s:'posters-custom', n:'Posters – Custom Dimensions', c:'posters', p:40, d:SIGN('Vibrant, high-impact prints','Posters printed at any custom dimension on your choice of stock.'), tags:['custom']},
-  {s:'window-graphics', n:'Window Graphics', c:'window-graphics', p:4.80, pmax:72, opts:{'Type':['Removable (short-term promotions)','Permanent (long-term branding)'],'Size':['A4','A3','A2','A1']}, d:SIGN('Custom branding and promotional signage for glass','Turn your windows into high-impact advertising space with custom-printed decals — two purpose-built options for short-term promotions or long-term branding.')},
-  {s:'window-graphics-custom-dimensions', n:'Window Graphics – Custom Dimensions', c:'window-graphics', p:40, d:SIGN('Custom branding for glass surfaces','Window decals cut to your exact measurements for full shopfront coverage.'), tags:['custom']},
+  {s:'a-frames', n:'A-Frames', c:'a-frames', p:160, pmax:400, img:IMGS_AFRAME, opts:{'Style':['Standard','Premium'],'Size':['A1 (594 × 841mm)','A2 (420 × 594mm)']}, d:SIGN('Tough, reliable, custom-branded street signage','Make your message stand out with professional-grade A-frames, available in two styles and two sizes. Perfect for retail, hospitality, real estate and events.')},
+  {s:'acm-panels', n:'ACM Panels', c:'acm-panels', p:25.20, pmax:453.60, img:IMGS_ACM, opts:{'Size':['A4','A3','A2','A1','A0','Custom — see Custom Dimensions']}, d:SIGN('Strong, weatherproof, long-lasting signage','Aluminium Composite Material panels give a sleek, rigid and highly durable signage solution — ideal for shopfronts, building fascia, directional signage, directories and outdoor branding.')},
+  {s:'acm-panels-custom-dimensions', n:'ACM Panels – Custom Dimensions', c:'acm-panels', p:160, img:[IMGS_ACM[1],IMGS_ACM[3]], d:SIGN('Strong, weatherproof, long-lasting signage','Need a size that isn\'t standard? Order ACM at your own dimensions. Enter your width and height and we\'ll cut to size.'), tags:['custom']},
+  {s:'corflute-signs', n:'Corflute Signs', c:'corflute', p:7.68, pmax:155.52, img:IMGS_CORFLUTE, opts:{'Size':['A4','A3','A2','A1','A0'],'Sides':['Single sided','Double sided']}, d:SIGN('Lightweight, affordable, weather-resistant','The go-to solution for short to medium-term signage. Durable, versatile and cost-effective — perfect for events, construction sites, real estate and promotional campaigns.')},
+  {s:'corflute-signs-custom-dimensions', n:'Corflute Signs – Custom Dimensions', c:'corflute', p:32, img:[IMGS_CORFLUTE[1],IMGS_CORFLUTE[3]], d:SIGN('Lightweight, affordable, weather-resistant','Corflute cut to your exact dimensions for site hoardings, event signage and anything non-standard.'), tags:['custom']},
+  {s:'enviroboard', n:'EnviroBoard', c:'enviroboard', p:12, pmax:233.28, img:IMGS_ENVIRO, opts:{'Size':['A4','A3','A2','A1','A0']}, d:SIGN('Eco-friendly, lightweight, fully recyclable','A sustainable alternative to foamboard or PVC signage. Made from environmentally conscious materials, ideal for brands prioritising eco-responsibility.')},
+  {s:'floor-decals', n:'Floor Decals', c:'floor-decals', p:3.60, pmax:40, img:IMGS_FLOOR, opts:{'Size':['A5','A4','A3','A2','A1'],'Shape':['Rectangle','Circle']}, d:SIGN('Durable anti-slip graphics for indoor and outdoor floors','Turn foot traffic into brand engagement — direct customers, promote sales or reinforce safety. Printed on tough, anti-slip materials designed for high-traffic conditions.')},
+  {s:'floor-decals-custom', n:'Floor Decals – Custom Dimensions', c:'floor-decals', p:160, img:[IMGS_FLOOR[1],IMGS_FLOOR[3]], d:SIGN('Durable anti-slip graphics for indoor and outdoor floors','Custom-sized floor graphics for wayfinding, promotions and safety zones.'), tags:['custom']},
+  {s:'foam-pvc', n:'Foam PVC', c:'foam-pvc', p:9.60, pmax:248.83, img:IMGS_PVC, opts:{'Size':['A4','A3','A2','A1','A0'],'Thickness':['3mm','5mm']}, d:SIGN('Durable, smooth, suitable indoors and out','Foam PVC (also known as Forex or Palight) is a rigid signage substrate for long-term internal and external signage with excellent print quality, durability and weather resistance.')},
+  {s:'foamboard', n:'Foamboard', c:'foamboard', p:8.40, pmax:171.07, img:IMGS_FOAM, opts:{'Size':['A4','A3','A2','A1','A0']}, d:SIGN('Lightweight, smooth, ideal for indoor signage','A cost-effective solution for indoor displays, presentations and point-of-sale. Rigid structure and a clean white surface for high-impact prints in a professional setting.')},
+  {s:'foamboard-custom', n:'Foamboard – Custom Dimension', c:'foamboard', p:35, img:[IMGS_FOAM[1],IMGS_FOAM[3]], d:SIGN('Lightweight, smooth, ideal for indoor signage','Foamboard cut to your dimensions for displays, presentations and point-of-sale.'), tags:['custom']},
+  {s:'posters', n:'Posters', c:'posters', p:2.50, pmax:40, img:POSTER_IMGS, opts:{'Size':['A4','A3','A2','A1','A0'],'Stock':['170gsm satin','200gsm gloss','Synthetic (tear-resistant)']}, d:SIGN('Vibrant, high-impact prints for promotions, retail and events','For a product launch, retail sale or internal comms, our posters deliver stunning visuals with crisp detail and colour accuracy. A range of professional paper stocks and sizes to suit any campaign.')},
+  {s:'posters-custom', n:'Posters – Custom Dimensions', c:'posters', p:40, img:POSTER_IMGS, d:SIGN('Vibrant, high-impact prints','Posters printed at any custom dimension on your choice of stock.'), tags:['custom']},
+  {s:'window-graphics', n:'Window Graphics', c:'window-graphics', p:4.80, pmax:72, img:WG_IMGS, opts:{'Type':['Removable (short-term promotions)','Permanent (long-term branding)'],'Size':['A4','A3','A2','A1']}, d:SIGN('Custom branding and promotional signage for glass','Turn your windows into high-impact advertising space with custom-printed decals — two purpose-built options for short-term promotions or long-term branding.')},
+  {s:'window-graphics-custom-dimensions', n:'Window Graphics – Custom Dimensions', c:'window-graphics', p:40, img:WG_IMGS, d:SIGN('Custom branding for glass surfaces','Window decals cut to your exact measurements for full shopfront coverage.'), tags:['custom']},
 ];
 
 /* ---- Wallpaper (all $65 / m², minimum 0.5 m²) ---- */
+/* Wallpaper photography on the live site follows a numbered trio: Complete-Wall-Design-N-2 / Close-Up-Design-N-2 / Original-Artboard-Design-N-2 (uploads/2025/04). We map numbers as they're confirmed; unmapped designs show the branded placeholder. */
+const WP_TRIO = (dn,sfx=2) => ['Complete-Wall-Design','Close-Up-Design','Original-Artboard-Design'].map(b=>U+'2025/04/'+b+'-'+dn+(sfx?'-'+sfx:'')+'.jpg');
 const WP_NOTE = 'Enter your wall dimensions and select your finish. Minimum order 0.5 m² (707mm × 707mm). Peel & stick, easy to apply, durable and removable.';
 const WP = [
- ['antique-floral-wallpaper','Antique Floral','pattern','A classic floral with an antique touch — refined, vintage charm for living rooms, bedrooms or dining areas.'],
- ['antique-textured-white-wallpaper','Antique Textured White','texture','A subtle textured white finish with an antique-inspired pattern; timeless, neutral and full of depth.'],
- ['aqua-stained-wallpaper','Aqua Stained','texture','A soothing aqua background with an artistic old-stain effect — modern meets retro.'],
- ['artistic-pattern-wallpaper','Artistic Pattern','pattern','A dynamic, visually engaging pattern that brings creative expression to offices and galleries.'],
- ['autumn-twilight-kids-wallpaper','Autumn Twilight','kids','Trees bathed in the golden glow of twilight — rich, warm colours for a cosy, inviting room.'],
- ['balloon-adventure-kids-wallpaper','Balloon Adventure','kids','Adorable animals floating in colourful hot air balloons on a pastel blue sky. Dreamy for nurseries.'],
- ['black-wood-hexagon-fusion-wallpaper','Black & Wood Hexagon Fusion','pattern','Sleek black hexagons fused with rustic wood textures — geometric precision with natural warmth.'],
- ['black-wood-wallpaper','Black Wood','texture','A striking black wood effect for dramatic, contemporary spaces.'],
- ['blurred-office-wallpaper','Blurred Office','office','A soft, blurred impression of a clean modern office — a sophisticated backdrop that never distracts.'],
- ['classic-60s-old-fashioned-wallpaper','Classic 60s Old-Fashioned','pattern','Iconic patterns and colours inspired by the 1960s for a nostalgic, stylish room.'],
- ['classic-lines-pattern-wallpaper','Classic Lines Pattern','pattern','A sophisticated arrangement of classic lines — clean, structured and refined.'],
- ['classic-pattern-wallpaper','Classic Pattern','pattern','An enduring pattern that complements a wide range of décor styles.'],
- ['classic-white-texture-wallpaper','Classic White Texture','texture','Subtle texture on crisp white — clean, modern and professional for offices and meeting rooms.'],
- ['confetti-celebration-wallpaper','Confetti Celebration','pattern','A playful scatter of coloured confetti for a festive, cheerful atmosphere.'],
- ['dreamy-bears-kids-wallpaper','Dreamy Bears','kids','Little bears sleeping on fluffy clouds under a crescent moon — sweet and calming for nurseries.'],
- ['elephant-grove-kids-wallpaper','Elephant Grove','kids','Majestic elephants and trees in a repeating pattern — playful yet sophisticated.'],
- ['enchanted-forest-friends-kids-wallpaper','Enchanted Forest Friends','kids','Bears, deer and foxes frolicking in a lush woodland scene full of adventure.'],
- ['enchanted-forest-home-kids-wallpaper','Enchanted Forest Home','kids','Storybook animals exploring an open forest with a charming tree-house door.'],
- ['forest-of-deer-kids-wallpaper','Forest of Deer','kids','A lush forest brimming with graceful deer — tranquil and enchanting.'],
- ['garden-greens-wallpaper','Garden Greens','pattern','Lush, vibrant garden foliage for a lively, rejuvenating room.'],
- ['gold-foil-texture-wallpaper','Gold Foil Texture','texture','A stunning gold foil effect — luxury and glamour for living and dining spaces.'],
- ['gold-lines-in-granite-wallpaper','Gold Lines in Granite','texture','Elegant gold lines on a textured granite background — luxurious and contemporary.', true],
- ['grey-artistic-strokes-wallpaper','Grey Artistic Strokes','texture','Dynamic grey strokes for a modern, expressive, abstract backdrop.'],
- ['jungle-canopy-critters-kids-wallpaper','Jungle Canopy Critters','kids','Monkeys, elephants, giraffes and colourful birds in a lush green canopy.'],
- ['jungle-safari-adventure-kids-wallpaper','Jungle Safari Adventure','kids','Giraffes, elephants, tigers and more on a vibrant jungle backdrop.'],
- ['modern-office-space-wallpaper','Modern Office Space','office','A sleek, contemporary office scene with clean lines — inspiring and professional.'],
- ['modern-panel-wallpaper','Modern Panel','texture','A contemporary panel effect — structured, sophisticated, modern.'],
- ['monkey-grove-kids-wallpaper','Monkey Grove','kids','Vibrant green trees with monkeys swinging from the branches on crisp white.'],
- ['new-york-skyline-office-wallpaper','New York Skyline','office','The iconic New York skyline — urban sophistication and ambition for your workspace.'],
- ['paint-strokes-wallpaper','Paint Strokes','pattern','A vibrant array of paint strokes for creative studios and bold offices.'],
- ['parisian-elephant-kids-wallpaper','Parisian Elephant','kids','An elegant elephant on the streets of Paris — whimsy with sophistication.'],
- ['pastel-balloon-sky-kids-wallpaper','Pastel Balloon Sky','kids','Cheerful balloons floating across a soft pastel sky — light and airy.'],
- ['pastel-jungle-play-kids-wallpaper','Pastel Jungle Play','kids','A whimsical pastel forest with playful jungle animals on light pink.'],
- ['pastel-leaves-wallpaper','Pastel Leaves','pattern','Delicate pastel leaves — soft, serene and natural.'],
- ['playful-journey-kids-wallpaper','Playful Journey','kids','Cartoon animals on bicycles, planes and street scenes on soft blue.'],
- ['rainbow-unicorn-dreams-kids-wallpaper','Rainbow Unicorn Dreams','kids','A unicorn prancing through fluffy clouds under a vibrant rainbow.'],
- ['rustic-cement-texture-wallpaper','Rustic Cement Texture','texture','Realistic cement for industrial-chic lofts, offices and creative spaces.'],
- ['rustic-vintage-wallpaper','Rustic Vintage','texture','A beautifully aged, weathered look full of classic character.'],
- ['serengeti-heights-kids-wallpaper','Serengeti Heights','kids','Giraffes, elephants and tranquil trees with gentle birds — a serene safari.'],
- ['skybound-adventure-kids-wallpaper','Skybound Adventure','kids','A penguin and giraffe in a hot air balloon, a fox on a balloon-lifted bicycle.'],
- ['sprinkle-donut-pink-wallpaper','Sprinkle Donut Pink','pattern','Pink with colourful sprinkles — a burst of fun for play areas.'],
- ['starry-night-kids-wallpaper','Starry Night','kids','Twinkling stars on a dreamy pink-and-blue gradient.'],
- ['sunset-serenity-kids-wallpaper','Sunset Serenity','kids','Soft clouds in warm sunset hues as day turns to night.'],
- ['sydney-harbour-elegance-wallpaper','Sydney Harbour Elegance','office','Sydney Harbour and the Opera House against the city skyline — local pride for offices and meeting rooms.'],
- ['textured-blue-artwork-wallpaper','Textured Blue Artwork','texture','A sophisticated blue texture that reads like a finely crafted artwork.'],
- ['textured-green-wallpaper','Textured Green','texture','A rich, textured green for calm, natural, elegant rooms.'],
- ['textured-modern-wood-wallpaper','Textured Modern Wood','texture','A contemporary wood pattern with a textured finish — natural warmth, modern flair.'],
- ['unicorn-bliss-kids-wallpaper','Unicorn Bliss','kids','A mother unicorn gazing at her baby on a dreamy backdrop.'],
- ['urban-skyline-office-wallpaper','Urban Skyline','office','A detailed city skyline — modern and professional for any workspace.'],
- ['vibrant-woodland-friends-kids-wallpaper','Vibrant Woodland Friends','kids','Squirrels, deer, birds, foxes and a small bear in a colourful forest.'],
- ['vintage-floral-wallpaper','Vintage Floral','pattern','A charming floral with vintage flair — classic beauty and nostalgia.'],
- ['white-brick-wallpaper','White Brick','texture','Realistic white brick — exposed-brick appeal with a fresh, modern twist.'],
- ['white-granite-tile-wallpaper','White Granite Tile','texture','A broken-tile effect in white granite — clean and contemporary for kitchens and bathrooms.'],
- ['white-leaf-wallpaper','White Leaf','pattern','A delicate leaf pattern in clean white — fresh, airy and refined.'],
- ['white-sandstone-texture-wallpaper','White Sandstone Texture','texture','Realistic sandstone in clean white — modern luxury for lobbies and offices.'],
- ['white-textured-floral-wallpaper','White Textured Floral','pattern','A subtle floral with a sophisticated textured finish.'],
- ['winter-wonderland-forest-kids-wallpaper','Winter Wonderland Forest','kids','A big bear, squirrels and rabbits in a snow-covered forest.'],
- ['wood-panels-wallpaper','Wood Panels','texture','A realistic wood-panel effect — rustic warmth with sophistication.'],
- ['world-map-wallpaper','World Map','office','A detailed, elegant world map for studies, offices and classrooms.'],
+ ['antique-floral-wallpaper','Antique Floral','pattern','A classic floral with an antique touch — refined, vintage charm for living rooms, bedrooms or dining areas.',false,15],
+ ['antique-textured-white-wallpaper','Antique Textured White','texture','A subtle textured white finish with an antique-inspired pattern; timeless, neutral and full of depth.',false,12,['assets/products/Complete-Wall-Design-12-2.jpg',...WP_TRIO(12).slice(1)]],
+ ['aqua-stained-wallpaper','Aqua Stained','texture','A soothing aqua background with an artistic old-stain effect — modern meets retro.',false,7,['assets/products/Original-Artboard-Design-7-2.jpg',...WP_TRIO(7).slice(0,2)]],
+ ['artistic-pattern-wallpaper','Artistic Pattern','pattern','A dynamic, visually engaging pattern that brings creative expression to offices and galleries.',false,6,['assets/products/Complete-Wall-Design-6-1-480x600.jpg',...WP_TRIO(6,1)]],
+ ['autumn-twilight-kids-wallpaper','Autumn Twilight','kids','Trees bathed in the golden glow of twilight — rich, warm colours for a cosy, inviting room.',false,null,['assets/products/autumn-twilight-wall.jpg']],
+ ['balloon-adventure-kids-wallpaper','Balloon Adventure','kids','Adorable animals floating in colourful hot air balloons on a pastel blue sky. Dreamy for nurseries.',false,22,['assets/products/Complete-Wall-Design-22.jpg',...WP_TRIO(22,0).slice(1)]],
+ ['black-wood-hexagon-fusion-wallpaper','Black & Wood Hexagon Fusion','pattern','Sleek black hexagons fused with rustic wood textures — geometric precision with natural warmth.',false,18,['assets/products/Complete-Wall-Design-18-1-480x600.jpg',...WP_TRIO(18,1)]],
+ ['black-wood-wallpaper','Black Wood','texture','A striking black wood effect for dramatic, contemporary spaces.',false,17,['assets/products/Complete-Wall-Design-17-1.jpg',...WP_TRIO(17,1).slice(1)]],
+ ['blurred-office-wallpaper','Blurred Office','office','A soft, blurred impression of a clean modern office — a sophisticated backdrop that never distracts.',false,20,['assets/products/Complete-Wall-Design-20-1-480x600.jpg',...WP_TRIO(20,1)]],
+ ['classic-60s-old-fashioned-wallpaper','Classic 60s Old-Fashioned','pattern','Iconic patterns and colours inspired by the 1960s for a nostalgic, stylish room.',false,4,['assets/products/Complete-Wall-Design-4-2-480x600.jpg',...WP_TRIO(4)]],
+ ['classic-lines-pattern-wallpaper','Classic Lines Pattern','pattern','A sophisticated arrangement of classic lines — clean, structured and refined.',false,1,['assets/products/Complete-Wall-Design-1-1-480x600.jpg',...WP_TRIO(1,1)]],
+ ['classic-pattern-wallpaper','Classic Pattern','pattern','An enduring pattern that complements a wide range of décor styles.',false,4,['assets/products/Complete-Wall-Design-4-1.jpg',...WP_TRIO(4,1).slice(1)]],
+ ['classic-white-texture-wallpaper','Classic White Texture','texture','Subtle texture on crisp white — clean, modern and professional for offices and meeting rooms.',false,19,['assets/products/Complete-Wall-Design-19.jpg',...WP_TRIO(19,0).slice(1)]],
+ ['confetti-celebration-wallpaper','Confetti Celebration','pattern','A playful scatter of coloured confetti for a festive, cheerful atmosphere.',false,5,['assets/products/Complete-Wall-Design-5-480x600.jpg',...WP_TRIO(5,0)]],
+ ['dreamy-bears-kids-wallpaper','Dreamy Bears','kids','Little bears sleeping on fluffy clouds under a crescent moon — sweet and calming for nurseries.',false,11,['assets/products/Complete-Wall-Design-11-480x600.jpg',...WP_TRIO(11,0)]],
+ ['elephant-grove-kids-wallpaper','Elephant Grove','kids','Majestic elephants and trees in a repeating pattern — playful yet sophisticated.',false,3,['assets/products/Complete-Wall-Design-3-480x600.jpg',...WP_TRIO(3,0)]],
+ ['enchanted-forest-friends-kids-wallpaper','Enchanted Forest Friends','kids','Bears, deer and foxes frolicking in a lush woodland scene full of adventure.',false,13,['assets/products/Original-Artboard-Design-13-480x600.jpg',...WP_TRIO(13,0).slice(0,2)]],
+ ['enchanted-forest-home-kids-wallpaper','Enchanted Forest Home','kids','Storybook animals exploring an open forest with a charming tree-house door.',false,14,['assets/products/Original-Artboard-Design-14-480x600.jpg',...WP_TRIO(14,0).slice(0,2)]],
+ ['forest-of-deer-kids-wallpaper','Forest of Deer','kids','A lush forest brimming with graceful deer — tranquil and enchanting.',false,16,['assets/products/Complete-Wall-Design-16-480x600.jpg',...WP_TRIO(16,0)]],
+ ['garden-greens-wallpaper','Garden Greens','pattern','Lush, vibrant garden foliage for a lively, rejuvenating room.',false,11,['assets/products/Complete-Wall-Design-11-2-480x600.jpg',...WP_TRIO(11)]],
+ ['gold-foil-texture-wallpaper','Gold Foil Texture','texture','A stunning gold foil effect — luxury and glamour for living and dining spaces.',false,6,['assets/products/Complete-Wall-Design-6-2-480x600.jpg',...WP_TRIO(6)]],
+ ['gold-lines-in-granite-wallpaper','Gold Lines in Granite','texture','Elegant gold lines on a textured granite background — luxurious and contemporary.', true,5,['assets/products/Complete-Wall-Design-5-1-480x600.jpg',...WP_TRIO(5,1)]],
+ ['grey-artistic-strokes-wallpaper','Grey Artistic Strokes','texture','Dynamic grey strokes for a modern, expressive, abstract backdrop.',false,8,['assets/products/Complete-Wall-Design-8-2-480x600.jpg',...WP_TRIO(8)]],
+ ['jungle-canopy-critters-kids-wallpaper','Jungle Canopy Critters','kids','Monkeys, elephants, giraffes and colourful birds in a lush green canopy.',false,1,['assets/products/Complete-Wall-Design-1-480x600.jpg',...WP_TRIO(1,0)]],
+ ['jungle-safari-adventure-kids-wallpaper','Jungle Safari Adventure','kids','Giraffes, elephants, tigers and more on a vibrant jungle backdrop.',false,2,['assets/products/Complete-Wall-Design-2-480x600.jpg',...WP_TRIO(2,0)]],
+ ['modern-office-space-wallpaper','Modern Office Space','office','A sleek, contemporary office scene with clean lines — inspiring and professional.',false,21,['assets/products/Complete-Wall-Design-21-1-480x600.jpg',...WP_TRIO(21,1)]],
+ ['modern-panel-wallpaper','Modern Panel','texture','A contemporary panel effect — structured, sophisticated, modern.',false,7,['assets/products/Complete-Wall-Design-7-1-480x600.jpg',...WP_TRIO(7,1)]],
+ ['monkey-grove-kids-wallpaper','Monkey Grove','kids','Vibrant green trees with monkeys swinging from the branches on crisp white.',false,4,['assets/products/Complete-Wall-Design-4-480x600.jpg',...WP_TRIO(4,0)]],
+ ['new-york-skyline-office-wallpaper','New York Skyline','office','The iconic New York skyline — urban sophistication and ambition for your workspace.',false,22,['assets/products/Complete-Wall-Design-22-1-480x600.jpg',...WP_TRIO(22,1)]],
+ ['paint-strokes-wallpaper','Paint Strokes','pattern','A vibrant array of paint strokes for creative studios and bold offices.',false,3,['assets/products/Complete-Wall-Design-3-1-480x600.jpg',...WP_TRIO(3,1)]],
+ ['parisian-elephant-kids-wallpaper','Parisian Elephant','kids','An elegant elephant on the streets of Paris — whimsy with sophistication.',false,8,['assets/products/Complete-Wall-Design-8-480x600.jpg',...WP_TRIO(8,0)]],
+ ['pastel-balloon-sky-kids-wallpaper','Pastel Balloon Sky','kids','Cheerful balloons floating across a soft pastel sky — light and airy.',false,null,['assets/products/Complete-Wall-Design-5-480x600.png']],
+ ['pastel-jungle-play-kids-wallpaper','Pastel Jungle Play','kids','A whimsical pastel forest with playful jungle animals on light pink.',false,9,['assets/products/Complete-Wall-Design-9-480x600.jpg',...WP_TRIO(9,0)]],
+ ['pastel-leaves-wallpaper','Pastel Leaves','pattern','Delicate pastel leaves — soft, serene and natural.',false,16,['assets/products/Complete-Wall-Design-16-2-480x600.jpg',...WP_TRIO(16)]],
+ ['playful-journey-kids-wallpaper','Playful Journey','kids','Cartoon animals on bicycles, planes and street scenes on soft blue.',false,20,['assets/products/Complete-Wall-Design-20-480x600.jpg',...WP_TRIO(20,0)]],
+ ['rainbow-unicorn-dreams-kids-wallpaper','Rainbow Unicorn Dreams','kids','A unicorn prancing through fluffy clouds under a vibrant rainbow.',false,12,['assets/products/Complete-Wall-Design-12-480x600.jpg',...WP_TRIO(12,0)]],
+ ['rustic-cement-texture-wallpaper','Rustic Cement Texture','texture','Realistic cement for industrial-chic lofts, offices and creative spaces.',false,14,['assets/products/Complete-Wall-Design-14-1-480x600.jpg',...WP_TRIO(14,1)]],
+ ['rustic-vintage-wallpaper','Rustic Vintage','texture','A beautifully aged, weathered look full of classic character.',false,2,['assets/products/Complete-Wall-Design-2-1-480x600.jpg',...WP_TRIO(2,1)]],
+ ['serengeti-heights-kids-wallpaper','Serengeti Heights','kids','Giraffes, elephants and tranquil trees with gentle birds — a serene safari.',false,7,['assets/products/Complete-Wall-Design-7-480x600.jpg',...WP_TRIO(7,0)]],
+ ['skybound-adventure-kids-wallpaper','Skybound Adventure','kids','A penguin and giraffe in a hot air balloon, a fox on a balloon-lifted bicycle.',false,6,['assets/products/Complete-Wall-Design-6-480x600.jpg',...WP_TRIO(6,0)]],
+ ['sprinkle-donut-pink-wallpaper','Sprinkle Donut Pink','pattern','Pink with colourful sprinkles — a burst of fun for play areas.',false,13,['assets/products/Complete-Wall-Design-13-1-480x600.jpg',...WP_TRIO(13,1)]],
+ ['starry-night-kids-wallpaper','Starry Night','kids','Twinkling stars on a dreamy pink-and-blue gradient.',false,18,['assets/products/Complete-Wall-Design-18-480x600.jpg',...WP_TRIO(18,0)]],
+ ['sunset-serenity-kids-wallpaper','Sunset Serenity','kids','Soft clouds in warm sunset hues as day turns to night.',false,10,['assets/products/Complete-Wall-Design-10-480x600.jpg',...WP_TRIO(10,0)]],
+ ['sydney-harbour-elegance-wallpaper','Sydney Harbour Elegance','office','Sydney Harbour and the Opera House against the city skyline — local pride for offices and meeting rooms.',false,8,['assets/products/Original-Artboard-Design-8-1.jpg']],
+ ['textured-blue-artwork-wallpaper','Textured Blue Artwork','texture','A sophisticated blue texture that reads like a finely crafted artwork.',false,12,['assets/products/Complete-Wall-Design-12-1-480x600.jpg',...WP_TRIO(12,1)]],
+ ['textured-green-wallpaper','Textured Green','texture','A rich, textured green for calm, natural, elegant rooms.',false,10,['assets/products/Complete-Wall-Design-10-1-480x600.jpg',...WP_TRIO(10,1)]],
+ ['textured-modern-wood-wallpaper','Textured Modern Wood','texture','A contemporary wood pattern with a textured finish — natural warmth, modern flair.',false,15,['assets/products/Complete-Wall-Design-15-1-480x600.jpg',...WP_TRIO(15,1)]],
+ ['unicorn-bliss-kids-wallpaper','Unicorn Bliss','kids','A mother unicorn gazing at her baby on a dreamy backdrop.',false,17,['assets/products/Complete-Wall-Design-17-480x600.jpg',...WP_TRIO(17,0).slice(1)]],
+ ['urban-skyline-office-wallpaper','Urban Skyline','office','A detailed city skyline — modern and professional for any workspace.',false,23,['assets/products/Complete-Wall-Design-23-480x600.jpg',...WP_TRIO(23,0)]],
+ ['vibrant-woodland-friends-kids-wallpaper','Vibrant Woodland Friends','kids','Squirrels, deer, birds, foxes and a small bear in a colourful forest.',false,21,['assets/products/Complete-Wall-Design-21-480x600.jpg',...WP_TRIO(21,0)]],
+ ['vintage-floral-wallpaper','Vintage Floral','pattern','A charming floral with vintage flair — classic beauty and nostalgia.',false,3,['assets/products/Complete-Wall-Design-3-2-480x600.jpg',...WP_TRIO(3,2)]],
+ ['white-brick-wallpaper','White Brick','texture','Realistic white brick — exposed-brick appeal with a fresh, modern twist.',false,9,['assets/products/Complete-Wall-Design-9-2-480x600.jpg',...WP_TRIO(9,2)]],
+ ['white-granite-tile-wallpaper','White Granite Tile','texture','A broken-tile effect in white granite — clean and contemporary for kitchens and bathrooms.',false,14,['assets/products/Complete-Wall-Design-14-2-480x600.jpg',...WP_TRIO(14,2)]],
+ ['white-leaf-wallpaper','White Leaf','pattern','A delicate leaf pattern in clean white — fresh, airy and refined.',false,10,['assets/products/Complete-Wall-Design-10-2-480x600.jpg',...WP_TRIO(10,2)]],
+ ['white-sandstone-texture-wallpaper','White Sandstone Texture','texture','Realistic sandstone in clean white — modern luxury for lobbies and offices.',false,11,['assets/products/Complete-Wall-Design-11-1-480x600.jpg',...WP_TRIO(11,1)]],
+ ['white-textured-floral-wallpaper','White Textured Floral','pattern','A subtle floral with a sophisticated textured finish.',false,13,['assets/products/Complete-Wall-Design-13-2-480x600.jpg',...WP_TRIO(13,2)]],
+ ['winter-wonderland-forest-kids-wallpaper','Winter Wonderland Forest','kids','A big bear, squirrels and rabbits in a snow-covered forest.',false,15,['assets/products/Original-Artboard-Design-15-480x600.jpg',...WP_TRIO(15,0).slice(0,2)]],
+ ['wood-panels-wallpaper','Wood Panels','texture','A realistic wood-panel effect — rustic warmth with sophistication.',false,16,['assets/products/Complete-Wall-Design-16-1-480x600.jpg',...WP_TRIO(16,1)]],
+ ['world-map-wallpaper','World Map','office','A detailed, elegant world map for studies, offices and classrooms.',false,9,['assets/products/Complete-Wall-Design-9-1-480x600.jpg',...WP_TRIO(9,1)]],
 ];
-WP.forEach(([s,n,tag,d,sold])=>PRODUCTS.push({s, n:n+(tag==='kids'?' Kids':tag==='office'?' Office':'')+' Wallpaper', c:'wallpaper', p:65, unit:'per m²', tags:[tag], sold:!!sold, d, long:`<p>${WP_NOTE}</p><h4>Finish options</h4><ul><li>Matte peel &amp; stick (standard)</li><li>Textured canvas peel &amp; stick</li></ul><p>Made from high-quality materials, easy to apply and durable. Supplied in panels sized to your wall.</p>`, opts:{'Finish':['Matte peel & stick','Textured canvas peel & stick']}, dims:true}));
+WP.forEach(([s,n,tag,d,sold,dn,local])=>PRODUCTS.push({s, n:n+(tag==='kids'?' Kids':tag==='office'?' Office':'')+' Wallpaper', c:'wallpaper', p:65, unit:'per m²', tags:[tag], sold:!!sold, d, img:local||(dn?WP_TRIO(dn):undefined), long:`<p>${WP_NOTE}</p><h4>Finish options</h4><ul><li>Matte peel &amp; stick (standard)</li><li>Textured canvas peel &amp; stick</li></ul><p>Made from high-quality materials, easy to apply and durable. Supplied in panels sized to your wall.</p>`, opts:{'Finish':['Matte peel & stick','Textured canvas peel & stick']}, dims:true}));
 
 /* ---- Cake toppers (all $30.95) ---- */
 const CT_NOTE = 'Available in twenty colours to match any cake design. Sized to suit a 6 inch cake. For custom sizes, colours or designs, email info@avantiprint.com.au for a tailored quote.';
@@ -648,7 +686,12 @@ const CT = [
  ['the-vella-family-christmas-cake-topper','Family Christmas Cake Topper','A gold mirror tree with silver mirror star, personalised with your family name — use it year after year.',true],
  ['twinkle-twinkle-little-star-cake-topper','Twinkle Twinkle Little Star Cake Topper','The nursery rhyme classic for baby showers and first birthdays.'],
 ];
-CT.forEach(([s,n,d,pers])=>PRODUCTS.push({s, n, c:'cake-toppers', p:30.95, d:d+' '+CT_NOTE, opts:Object.assign({'Colour':CT_COLOURS}, pers?{'Personalisation':['Enter text at checkout']}:{}), pers, long:`<p>${CT_NOTE}</p>${pers?'<h4>Personalisation</h4><p>Write the name exactly as you want it to appear. The size of the name is dictated by its length — long names are reduced in height to fit, short names are enlarged to fill the space.</p>':''}`}));
+/* Topper photos on the live site follow {Name}-Topper.jpg in uploads/2025/04 (confirmed on Age & Name). Derived URLs that don't exist degrade to the branded placeholder via the img error fallback. colors1.jpg is the shared colour chart shown on every live topper page. */
+const CT_IMG = n => U+'2025/04/'+n.replace(/ Cake Topper$/,'').replace(/[–—]/g,'-').replace(/[^A-Za-z0-9 -]/g,'').trim().split(/\s+/).join('-')+'-Topper.jpg';
+const CT_EXTRA = {'age-cake-topper':[U+'2025/04/twenty-one1.jpg',U+'2025/04/twenty-one.jpg']};
+/* Photos supplied directly by Avanti take priority over the derived filename. */
+const CT_LOCAL = {'name-and-age-cake-topper':'assets/products/Name-and-Age.jpg','age-ring-cake-topper':'assets/products/Age-Ring-480x550.jpg','anniversary-cake-topper':'assets/products/AnniversaryTopper1-480x550.jpg','bride-to-be-bridal-shower-cake-topper':'assets/products/Bride-To-Be.jpg','bride-to-be-cake-topper':'assets/products/BridetobeTopper1.jpg','communion-cross-with-name-cake-topper':'assets/products/Communion-Cross-with-Name-480x550.jpg','congrats-cake-topper':'assets/products/Congrats-480x550.jpg','cross-and-dove-cake-topper':'assets/products/Cross-and-Dove-480x550.jpg','cross-cake-topper':'assets/products/CrossTopper.jpg','engaged-bridal-shower-cake-topper':'assets/products/Engaged.jpg','first-holy-communion-with-name-and-cross-cake-topper':'assets/products/First-Holy-Communion-with-Name-and-Cross-480x550.jpg','happy-birthday-with-name-cake-topper':'assets/products/Happy-Birthday-with-Name-480x550.jpg','happy-with-name-and-age-cake-topper':'assets/products/happy-birthday-with-name-and-age-480x550.jpg','last-fling-cake-topper':'assets/products/Last-Fling-480x550.jpg','love-with-arrow-cake-topper':'assets/products/Love-With-Arrow-480x550.jpg','name-ring-cake-topper':'assets/products/Name-Ring-480x550.jpg','name-with-cross-cake-topper':'assets/products/NamewithCrossTopper1.jpg','oh-baby-wreath-cake-topper':'assets/products/Oh-Baby-Wreath-480x550.jpg','the-vella-family-christmas-cake-topper':'assets/products/The-Vella-Family-Christmas-Cake-Topper.jpg','twinkle-twinkle-little-star-cake-topper':'assets/products/Twinkle-Twinkle-Little-Star-480x550.jpg'};
+CT.forEach(([s,n,d,pers])=>PRODUCTS.push({s, n, c:'cake-toppers', p:30.95, d:d+' '+CT_NOTE, img:[CT_LOCAL[s]||CT_IMG(n),...(CT_EXTRA[s]||[]),CT_CHART], opts:Object.assign({'Colour':CT_COLOURS}, pers?{'Personalisation':['Enter text at checkout']}:{}), pers, long:`<p>${CT_NOTE}</p>${pers?'<h4>Personalisation</h4><p>Write the name exactly as you want it to appear. The size of the name is dictated by its length — long names are reduced in height to fit, short names are enlarged to fill the space.</p>':''}`}));
 
 /* ---- Blog ---- */
 const POSTS = [
@@ -693,13 +736,21 @@ const prod = s => PRODUCTS.find(p=>p.s===s);
 
 /* ---- images / placeholders ---- */
 function initials(n){ return n.split(/\s+/).filter(w=>/^[A-Za-z0-9]/.test(w)).slice(0,2).map(w=>w[0].toUpperCase()).join(''); }
+function phHTML(cat, name, note){ return `<div class="ph ${cat}"><b>${initials(name)}</b><span>${note}</span></div>`; }
+/* If a scraped/derived image URL 404s, swap the <img> for the branded placeholder tile. */
+window.imgFail = function(el){
+  const wrap = document.createElement('div');
+  wrap.innerHTML = phHTML(el.dataset.phc||'', el.dataset.phn||'', el.dataset.phs||'Photo coming');
+  el.replaceWith(wrap.firstChild);
+};
+const IMG_FB = (p)=>`onerror="imgFail(this)" data-phc="${p.c}" data-phn="${esc(p.n)}"`;
 function thumb(p, cls=''){
-  if(p.img && p.img[0]) return `<img src="${p.img[0]}" alt="${esc(p.n)}" loading="lazy">`;
+  if(p.img && p.img[0]) return `<img src="${p.img[0]}" alt="${esc(p.n)}" loading="lazy" ${IMG_FB(p)}>`;
   return `<div class="ph ${p.c} ${cls}"><b>${initials(p.n)}</b><span>Photo coming</span></div>`;
 }
 function catThumb(c){
-  if(c.img) return `<img src="${c.img}" alt="${esc(c.n)}" loading="lazy">`;
-  return `<div class="ph ${c.s}"><b>${initials(c.n)}</b><span>${byCat(c.s).length} products</span></div>`;
+  if(c.img) return `<img src="${c.img}" alt="${esc(c.n)}" loading="lazy" onerror="imgFail(this)" data-phc="${c.s}" data-phn="${esc(c.n)}" data-phs="${byCat(c.s).length} products">`;
+  return `<div class="ph ${c.s}"><b>${initials(c.n)}</b><span>${byCat(c.s).length} product${byCat(c.s).length===1?'':'s'}</span></div>`;
 }
 
 /* ---- pricing ---- */
@@ -773,8 +824,19 @@ $('#searchForm').addEventListener('submit', e=>{ e.preventDefault(); const q=$('
 
 /* ---- header menus ---- */
 function buildMenus(){
-  $('#megaCols').innerHTML = GROUPS.map(g=>`<div><h4>${g}</h4><ul>${CATS.filter(c=>c.g===g).map(c=>`<li><a href="#/shop/${c.s}">${c.n}<span>${byCat(c.s).length}</span></a></li>`).join('')}</ul></div>`).join('') +
-    `<a class="promo" href="#/product/custom-branded-mailer-boxes" style="background-image:url(${U}2025/06/mailer-boxes-2.jpg)"><span class="eyebrow" style="color:var(--kraft)">Free basic design</span><b style="font-family:var(--display);font-size:1.3rem;line-height:1.1">Send us a logo, we'll lay out your box.</b><span class="mono" style="margin-top:8px;opacity:.8">Proof in 1 business day</span></a>`;
+  $('#megaCols').innerHTML = GROUPS.map(g=>`<div><h4>${g}</h4><ul>${CATS.filter(c=>c.g===g).map(c=>`<li><a href="#/shop/${c.s}" data-mcat="${c.s}">${c.n}<span>${byCat(c.s).length}</span></a></li>`).join('')}</ul></div>`).join('') +
+    `<a class="promo" id="megaPromo" href="#/product/custom-branded-mailer-boxes" style="background-image:url(${U}2025/06/mailer-boxes-2.jpg)"><span class="eyebrow" style="color:var(--kraft)">Free basic design</span><b style="font-family:var(--display);font-size:1.3rem;line-height:1.1">Send us a logo, we'll lay out your box.</b><span class="mono" style="margin-top:8px;opacity:.8">Proof in 1 business day</span></a>`;
+  /* hover a category -> preview it in the promo panel; leave -> restore default */
+  const promoEl = $('#megaPromo');
+  const promoDefault = {href:promoEl.getAttribute('href'), img:`${U}2025/06/mailer-boxes-2.jpg`, eyebrow:'Free basic design', title:"Send us a logo, we'll lay out your box.", sub:'Proof in 1 business day'};
+  const setPromo = d => { promoEl.setAttribute('href', d.href);
+    promoEl.style.backgroundImage = d.img?`url(${d.img})`:'none';
+    promoEl.innerHTML = `<span class="eyebrow" style="color:var(--kraft)">${d.eyebrow}</span><b style="font-family:var(--display);font-size:1.3rem;line-height:1.1">${d.title}</b><span class="mono" style="margin-top:8px;opacity:.8">${d.sub}</span>`; };
+  $('#megaCols').addEventListener('mouseover', e=>{ const a=e.target.closest('[data-mcat]'); if(!a) return; const c=cat(a.dataset.mcat); if(!c) return;
+    setPromo({href:`#/shop/${c.s}`, img:c.img||'', eyebrow:c.g, title:c.n, sub:`${c.blurb} · ${byCat(c.s).length} product${byCat(c.s).length===1?'':'s'}`}); });
+  $('#megaCols').addEventListener('mouseleave', ()=>setPromo(promoDefault));
+  /* pre-warm category images so the panel swaps without flashing */
+  $('button[data-mega]')?.addEventListener('mouseenter', ()=>{ CATS.forEach(c=>{ if(c.img){ const im=new Image(); im.src=c.img; } }); }, {once:true});
   $('#mnav').innerHTML = `<a href="#/" data-close>Home</a><a href="#/shop" data-close>All products</a>` + GROUPS.map(g=>`<div class="group">${g}</div><div class="sub">${CATS.filter(c=>c.g===g).map(c=>`<a href="#/shop/${c.s}" data-close>${c.n}<span class="mono" style="color:var(--ink-3)">${byCat(c.s).length}</span></a>`).join('')}</div>`).join('') + `<div class="group">Company</div><a href="#/about" data-close>About us</a><a href="#/contact" data-close>Contact &amp; FAQs</a><a href="tel:0297290139" data-close>Call 02 9729 0139</a>`;
   $('#footCats').innerHTML = CATS.map(c=>`<li><a href="#/shop/${c.s}">${c.n}</a></li>`).join('');
 }
@@ -784,15 +846,38 @@ function card(p){
   const c = cat(p.c);
   const badge = p.sold?`<span class="badge out">Sold out</span>`: p.tiers?`<span class="badge bulk">Bulk pricing</span>`: p.tags&&p.tags.includes('custom')?`<span class="badge">Custom size</span>`: p.tags&&p.tags.includes('best')?`<span class="badge">Best seller</span>`:'';
   return `<article class="card">
-    <div class="thumb">${thumb(p)}${badge}</div>
+    <div class="thumb">${thumb(p)}${badge}${p.sold?'':`<div class="quick">${p.opts||p.dims?`<a class="btn btn-red btn-sm" href="#/product/${p.s}">Choose options</a>`:`<button class="btn btn-red btn-sm" data-add="${p.s}">Add to cart</button>`}</div>`}</div>
     <div class="body">
-      <span class="cat">${c.n}</span>
       <h3><a href="#/product/${p.s}">${esc(p.n)}</a></h3>
+      <span class="cat">${p.c==='wallpaper'?'Made to your wall size':p.c==='cake-toppers'?'Acrylic · twenty colours':p.tiers?`Bulk pricing from ${p.tiers.at(-1)[0]}+ units`:p.pmax?'Price varies by size':cat(p.c).n}</span>
       ${priceLabel(p)}
-      <div class="quick">${p.sold?`<button class="btn btn-line btn-sm" disabled>Unavailable</button>`: p.opts||p.dims?`<a class="btn btn-line btn-sm" href="#/product/${p.s}">Choose options</a>`:`<button class="btn btn-line btn-sm" data-add="${p.s}">Add to cart</button>`}</div>
     </div></article>`;
 }
-document.addEventListener('click', e=>{ const a=e.target.closest('[data-add]'); if(a){ addToCart(a.dataset.add,1,{}); } });
+document.addEventListener('click', e=>{ const a=e.target.closest('[data-add]'); if(a){ addToCart(a.dataset.add,1,{}); }
+  const nav=e.target.closest('[data-cprev],[data-cnext]');
+  if(nav){ const track=nav.closest('.cat-group')?.querySelector('.track'); if(track){ track.scrollBy({left:(nav.hasAttribute('data-cprev')?-1:1)*track.clientWidth*.85, behavior:'smooth'}); } }
+});
+function syncCrslNav(){ $$('.cat-group').forEach(gr=>{ const t=gr.querySelector('.track'); if(!t) return; const prev=gr.querySelector('[data-cprev]'), next=gr.querySelector('[data-cnext]');
+  const upd=()=>{ if(prev) prev.disabled = t.scrollLeft<=2; if(next) next.disabled = t.scrollLeft >= t.scrollWidth - t.clientWidth - 2; };
+  t.addEventListener('scroll', upd, {passive:true}); upd(); }); }
+
+/* ---- hero slider ---- */
+function heroSlider(){
+  const hero=$('#hero'); if(!hero) return;
+  const slides=$$('.slide',hero), dots=$$('[data-dot]',hero); let i=0;
+  const go=n=>{ i=(n+slides.length)%slides.length;
+    slides.forEach((s,k)=>s.classList.toggle('active',k===i));
+    dots.forEach((d,k)=>d.classList.toggle('active',k===i)); restart(); };
+  const restart=()=>{ clearInterval(window.__heroTimer); window.__heroTimer=setInterval(()=>go(i+1),6000); };
+  hero.addEventListener('click',e=>{ const d=e.target.closest('[data-dot]'); if(d) return go(+d.dataset.dot);
+    if(e.target.closest('[data-hprev]')) return go(i-1); if(e.target.closest('[data-hnext]')) return go(i+1); });
+  hero.addEventListener('mouseenter',()=>clearInterval(window.__heroTimer));
+  hero.addEventListener('mouseleave',restart);
+  let x0=null;
+  hero.addEventListener('pointerdown',e=>{ x0=e.clientX; },{passive:true});
+  hero.addEventListener('pointerup',e=>{ if(x0===null) return; const dx=e.clientX-x0; x0=null; if(Math.abs(dx)>48) go(i+(dx<0?1:-1)); },{passive:true});
+  restart();
+}
 const ico = {
   factory:`<svg viewBox="0 0 24 24"><path d="M3 21V9l5 3V9l5 3V9l5 3v9M3 21h18M8 21v-4h3v4M14 21v-4h3v4"/></svg>`,
   truck:`<svg viewBox="0 0 24 24"><path d="M3 6h11v10H3zM14 9h4l3 3v4h-7z"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg>`,
@@ -805,18 +890,24 @@ const ico = {
 function pageHome(){
   const best = ['pull-up-banner','custom-branded-mailer-boxes','custom-branded-shipping-cartons','corflute-signs','sydney-harbour-elegance-wallpaper','name-and-age-cake-topper','a-frames','window-graphics'].map(prod);
   return `
-  <section class="hero"><div class="wrap">
-    <div>
-      <span class="eyebrow">Print &amp; packaging · Made in Western Sydney</span>
-      <h1>Your brand, printed <span>properly.</span></h1>
-      <p class="lead">Custom mailer boxes, shipping cartons, banners and signage — designed, printed and made in our own factory. Upload artwork or let us lay it out for free. Order by 12pm, dispatched next business day.</p>
-      <div class="ctas"><a class="btn btn-red btn-lg" href="#/shop/mailer-boxes">Shop packaging</a><a class="btn btn-ghost btn-lg" href="#/shop/pull-up-banners">Shop signage</a></div>
-      <div class="proof"><div><strong>100%</strong>Australian owned &amp; made</div><div><strong>1 day</strong>Artwork proof turnaround</div><div><strong>$0</strong>Basic design with any order</div></div>
-    </div>
-    <div class="crop"><i></i><span class="crop-label">Standard pull up · 850 × 2000 mm</span>
-      <a class="frame" href="#/product/pull-up-banner"><img src="${U}2025/04/A8-stadard.jpg" alt="Standard pull up banner stand" fetchpriority="high"><div class="spec"><span>Pull up banner</span><b>from $84</b><span>Bulk 16+</span></div></a>
-    </div>
-  </div></section>
+  <section class="hero" id="hero" aria-roledescription="carousel" aria-label="Featured products">
+    ${[
+      {img:U+'2025/04/1-copy.jpg',   eyebrow:'Best sellers 🔥', title:'Cake Toppers',    href:'#/shop/cake-toppers'},
+      {img:U+'2025/04/3-copy.jpg',   eyebrow:'Best sellers 🔥', title:'Pull Up Banners', href:'#/shop/pull-up-banners'},
+      {img:U+'2025/04/1-copy-1.jpg', eyebrow:'New arrivals 🔥', title:'Wallpapers',      href:'#/shop/wallpaper'},
+    ].map((s,i)=>`<div class="slide ${i===0?'active':''}" role="group" aria-label="${i+1} of 3">
+      <img src="${s.img}" alt="${s.title}" ${i===0?'fetchpriority="high"':'loading="lazy"'}>
+      <div class="wrap">
+        <span class="s-eyebrow">${s.eyebrow}</span>
+        <h1>${s.title}</h1>
+        <p class="lead">We're something other than duplicates… What's more, we do it right! A full administration printing background.</p>
+        <a class="btn-hero" href="${s.href}">Shop now <svg viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+        <div class="proof"><div><strong>100%</strong>Australian owned &amp; made</div><div><strong>1 day</strong>Artwork proof turnaround</div><div><strong>$0</strong>Basic design with any order</div></div>
+      </div>
+    </div>`).join('')}
+    <div class="dots">${[0,1,2].map(i=>`<button data-dot="${i}" class="${i===0?'active':''}" aria-label="Go to slide ${i+1}"></button>`).join('')}</div>
+    <div class="h-nav"><button data-hprev aria-label="Previous slide"><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg></button><button data-hnext aria-label="Next slide"><svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></button></div>
+  </section>
 
   <section class="trust"><div class="wrap">
     <div class="item">${ico.factory}<p><strong>Made in-house</strong><span>Our own machines, our own factory, Western Sydney NSW.</span></p></div>
@@ -827,7 +918,9 @@ function pageHome(){
 
   <section class="section"><div class="wrap">
     <div class="section-head"><div><span class="eyebrow">Everything we make</span><h2>Shop by product</h2></div><a class="btn btn-line" href="#/shop">All ${PRODUCTS.length} products</a></div>
-    <div class="cat-groups">${GROUPS.map(g=>{ const cs=CATS.filter(c=>c.g===g); return `<div class="cat-group"><h3>${g}<small>${cs.reduce((s,c)=>s+byCat(c.s).length,0)} products</small></h3><div class="tiles ${cs.length<=2?'wide':''}">${cs.map((c,i)=>`<a class="tile" href="#/shop/${c.s}"><div class="thumb">${catThumb(c)}</div><div class="meta"><b>${c.n}</b><span>${c.blurb}</span></div></a>`).join('')}</div></div>`}).join('')}</div>
+    <div class="cat-groups">${GROUPS.map(g=>{ const cs=CATS.filter(c=>c.g===g); const wide=cs.length<=2;
+      const tile=c=>`<a class="ctile" href="#/shop/${c.s}"><div class="thumb">${catThumb(c)}<div class="desc">${c.blurb}</div></div><b>${c.n}</b><span>${byCat(c.s).length} product${byCat(c.s).length===1?'':'s'}</span></a>`;
+      return `<div class="cat-group"><div class="g-head"><h3>${g}<small>${cs.reduce((s,c)=>s+byCat(c.s).length,0)} products</small></h3>${wide?'':`<div class="crsl-nav"><button data-cprev aria-label="Scroll ${g} left"><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg></button><button data-cnext aria-label="Scroll ${g} right"><svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></button></div>`}</div><div class="${wide?'tiles wide':'track'}">${cs.map(tile).join('')}</div></div>`}).join('')}</div>
   </div></section>
 
   <section class="section" style="padding-top:0"><div class="wrap">
@@ -912,8 +1005,8 @@ function pageProduct(slug){
     <div class="crumbs" style="padding-top:22px"><a href="#/">Home</a> / <a href="#/shop">Shop</a> / <a href="#/shop/${c.s}">${c.n}</a> / <span>${esc(p.n)}</span></div>
     <div class="pdp">
       <div class="gallery">
-        <div class="main crop"><i></i>${imgs?`<img id="mainImg" src="${imgs[0]}" alt="${esc(p.n)}">`:`<div class="ph ${p.c}"><b>${initials(p.n)}</b><span>Product photo coming</span></div>`}</div>
-        ${imgs&&imgs.length>1?`<div class="thumbs">${imgs.map((src,i)=>`<button class="${i===0?'active':''}" data-img="${src}" aria-label="Image ${i+1}"><img src="${src}" alt="" loading="lazy"></button>`).join('')}</div>`:''}
+        <div class="main crop"><i></i>${imgs?`<img id="mainImg" src="${imgs[0]}" alt="${esc(p.n)}" ${IMG_FB(p)} data-phs="Product photo coming">`:`<div class="ph ${p.c}"><b>${initials(p.n)}</b><span>Product photo coming</span></div>`}</div>
+        ${imgs&&imgs.length>1?`<div class="thumbs">${imgs.map((src,i)=>`<button class="${i===0?'active':''}" data-img="${src}" aria-label="Image ${i+1}"><img src="${src}" alt="" loading="lazy" onerror="this.closest('button').style.display='none'"></button>`).join('')}</div>`:''}
       </div>
       <div class="buy">
         <span class="eyebrow">${c.n}${p.tags&&p.tags.includes('best')?' · Best seller':''}</span>
@@ -966,7 +1059,7 @@ function wireProduct(){
     if(missing){ toast(`Choose a ${missing.toLowerCase()} first`); $(`[data-opt="${missing}"]`).focus(); return; }
     addToCart(p.s, Math.max(1,+qty.value||1), opts);
   };
-  $$('[data-img]').forEach(b=>b.onclick=()=>{ $('#mainImg').src=b.dataset.img; $$('[data-img]').forEach(x=>x.classList.remove('active')); b.classList.add('active'); });
+  $$('[data-img]').forEach(b=>b.onclick=()=>{ let m=$('#mainImg'); if(!m){ const holder=$('.gallery .main'); if(!holder) return; holder.querySelector('.ph')?.remove(); m=document.createElement('img'); m.id='mainImg'; holder.appendChild(m); } m.src=b.dataset.img; $$('[data-img]').forEach(x=>x.classList.remove('active')); b.classList.add('active'); });
   $$('[data-tab]').forEach(b=>b.onclick=()=>{ $$('[data-tab]').forEach(x=>x.classList.remove('active')); $$('[data-panel]').forEach(x=>x.classList.remove('active')); b.classList.add('active'); $(`[data-panel="${b.dataset.tab}"]`).classList.add('active'); });
   upd();
 }
@@ -1015,12 +1108,12 @@ function page404(){ return `<div class="wrap" style="padding:80px 0;text-align:c
 
 /* ---- router ---- */
 function route(){
-  closeAll();
+  closeAll(); clearInterval(window.__heroTimer);
   const raw = location.hash.replace(/^#\/?/,'');
   const [path, qs] = raw.split('?'); const params = new URLSearchParams(qs||'');
   const seg = path.split('/').filter(Boolean);
   const main = $('#main'); let html='', after=null, title='Avanti Print & Design';
-  if(!seg.length){ html=pageHome(); }
+  if(!seg.length){ html=pageHome(); after=()=>{syncCrslNav(); heroSlider();}; }
   else if(seg[0]==='shop'){ html=pageShop(seg[1], params.get('q')); after=wireShop; title=(seg[1]?cat(seg[1]).n:'Shop')+' — Avanti Print & Design'; }
   else if(seg[0]==='product'){ html=pageProduct(seg[1]); after=wireProduct; const p=prod(seg[1]); if(p) title=p.n+' — Avanti Print & Design'; }
   else if(seg[0]==='about'){ html=pageAbout(); title='About — Avanti Print & Design'; }
