@@ -464,6 +464,10 @@
     "https://avantiprint.com.au/wp-content/uploads/2025/10/Acm-03.jpg",
     "https://avantiprint.com.au/wp-content/uploads/2025/10/Acm-7.jpg"
    ],
+   "cdims": {
+    "maxW": 1200,
+    "maxH": 2400
+   },
    "d": "Strong, weatherproof, long-lasting signage — Need a size that isn't standard? Order ACM at your own dimensions. Enter your width and height and we'll cut to size.",
    "tags": [
     "custom"
@@ -491,9 +495,18 @@
      "A1",
      "A0"
     ],
+    "Thickness": [
+     "3mm",
+     "5mm"
+    ],
     "Sides": [
      "Single sided",
      "Double sided"
+    ],
+    "Eyelets": [
+     "No eyelets",
+     "Eyelets – corners",
+     "Eyelets – centre-top"
     ]
    },
    "d": "Lightweight, affordable, weather-resistant — The go-to solution for short to medium-term signage. Durable, versatile and cost-effective — perfect for events, construction sites, real estate and promotional campaigns."
@@ -507,7 +520,25 @@
     "https://avantiprint.com.au/wp-content/uploads/2025/10/corflute-3.jpg",
     "https://avantiprint.com.au/wp-content/uploads/2025/10/corflute-6.jpg"
    ],
-   "d": "Lightweight, affordable, weather-resistant — Corflute cut to your exact dimensions for site hoardings, event signage and anything non-standard.",
+   "opts": {
+    "Material": [
+     "3mm – Single sided",
+     "3mm – Double sided",
+     "5mm – Single sided",
+     "5mm – Double sided"
+    ],
+    "Eyelets": [
+     "No eyelets",
+     "Eyelets – corners",
+     "Eyelets – centre-top"
+    ]
+   },
+   "cdims": {
+    "maxW": 1200,
+    "maxH": 2400
+   },
+   "d": "Lightweight, affordable, weather-resistant — Corflute cut to your exact dimensions — any size up to 1200 × 2400 mm, with contour cutting to custom shapes available.",
+   "long": "<p>Printed direct to 3mm or 5mm corflute with high-resolution latex inks — vibrant colour, fully waterproof and outdoor-durable. Single or double sided, with optional eyelets in the corners or centre-top for hanging and mounting.</p><h4>Good to know</h4><ul><li>3mm suits indoor or short-term outdoor use; 5mm is more rigid for windy or longer-term outdoor jobs</li><li>Any size up to 1200 × 2400 mm; contour cutting to custom shapes on request</li><li>Typical turnaround 2–4 business days from artwork approval — rush available</li></ul>",
    "tags": [
     "custom"
    ]
@@ -575,6 +606,7 @@
     "https://avantiprint.com.au/wp-content/uploads/2025/10/floor-decals-3.jpg",
     "https://avantiprint.com.au/wp-content/uploads/2025/10/floor-decols6.jpg"
    ],
+   "cdims": {},
    "d": "Durable anti-slip graphics for indoor and outdoor floors — Custom-sized floor graphics for wayfinding, promotions and safety zones.",
    "tags": [
     "custom"
@@ -643,6 +675,10 @@
     "https://avantiprint.com.au/wp-content/uploads/2025/10/foam-board-3.jpg",
     "https://avantiprint.com.au/wp-content/uploads/2025/10/foam-board-6.jpg"
    ],
+   "cdims": {
+    "maxW": 1200,
+    "maxH": 2400
+   },
    "d": "Lightweight, smooth, ideal for indoor signage — Foamboard cut to your dimensions for displays, presentations and point-of-sale.",
    "tags": [
     "custom"
@@ -683,6 +719,7 @@
     "assets/products/posters-1-480x600.jpg",
     "assets/products/posters-4.jpg"
    ],
+   "cdims": {},
    "d": "Vibrant, high-impact prints — Posters printed at any custom dimension on your choice of stock.",
    "tags": [
     "custom"
@@ -721,6 +758,7 @@
     "assets/products/window-graphics-2-480x600.jpg",
     "assets/products/window-graphics-3.jpg"
    ],
+   "cdims": {},
    "d": "Custom branding for glass surfaces — Window decals cut to your exact measurements for full shopfront coverage.",
    "tags": [
     "custom"
@@ -3078,5 +3116,48 @@
    },
    "long": "<p>Available in twenty colours to match any cake design. Sized to suit a 6 inch cake. For custom sizes, colours or designs, email info@avantiprint.com.au for a tailored quote.</p>"
   }
- ]
+ ],
+ "shipping": {
+  "cake-toppers": {
+   "cls": "Cake Toppers",
+   "options": [
+    [
+     "Standard delivery",
+     13
+    ],
+    [
+     "Express delivery",
+     20
+    ]
+   ]
+  },
+  "pull-up-banners": {
+   "cls": "Banner Stands",
+   "options": [
+    [
+     "Metro NSW delivery",
+     30
+    ],
+    [
+     "Regional NSW delivery",
+     50
+    ]
+   ],
+   "courier": true
+  },
+  "corflute": {
+   "cls": "Corflute",
+   "options": [
+    [
+     "Metro NSW delivery",
+     40
+    ],
+    [
+     "Regional NSW delivery",
+     100
+    ]
+   ],
+   "courier": true
+  }
+ }
 }
